@@ -1,0 +1,17 @@
+version: "3"
+
+services:
+  db-postgres-powerup-project:
+    image: postgres:alpine
+    ports:
+      - "5436:5432"
+    container_name: "db-postgres-powerup-project"
+    restart: always
+    volumes:
+      - ./powerup-database:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: pguser
+      POSTGRES_PASSWORD: pgpassword
+volumes:
+  powerup-database:
+

@@ -1,0 +1,12 @@
+{
+  "name": "powerup-projeto",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/netrometro/UPE-2022.2-Equipe02.git",
+  "author": "David Rocha <manoeudavi3@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@prisma/client": "^4.11.0",
+    "prisma": "^4.11.0"
+  }
+}
