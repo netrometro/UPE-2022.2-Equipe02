@@ -9,3 +9,14 @@ datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
 }
+
+model Perfil{
+  id Int @id @default(autoincrement())
+  idade String
+  peso String
+  altura String
+  genero String
+  fatorAtividade String
+  
+}
+
