@@ -32,3 +32,21 @@ export const get = async (req,res) =>{
         res.status(400).send(error)
     }
 }
+
+export const getId = async(req,res) => {
+    try {
+        const conta = await getById(Number(req.params.id))
+        res.status(200).send(conta)
+    } catch (error) {
+        res.status(400).send(error)
+    }
+}
+
+export const update = async(req, res) => {
+    try {
+        const conta = await updateConta(Number(req.params.id),req.body)
+        res.status(200).send(conta)
+    } catch (error) {
+        res.status(400).send(error)
+    }
+}
