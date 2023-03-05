@@ -8,3 +8,10 @@ export const create_conta = async(data) =>{
     })
     return conta
 }
+
+//listar todas as colunas
+
+export const getAll = async() =>{
+    const contas = await prisma.conta.findMany({})
+    return contas
+}
