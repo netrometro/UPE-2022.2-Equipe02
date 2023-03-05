@@ -37,3 +37,14 @@ export const updateConta = async(id, data) => {
     })
     return conta
 }
+
+//deletar da tabela
+
+export const deleteConta = async(id) => {
+    await prisma.conta.delete({
+        where:{
+            id
+        }
+    })
+    return
+}
