@@ -2,9 +2,51 @@
 import { Link} from "react-router-dom";
 import { Buttons } from "../../Atomic/Buttons/Buttons";
 import { Inputs } from "../../Atomic/Input/Inputs";
+import{useNavigate} from "react-router-dom"
 
+import { useState } from "react";
+import axios, { isCancel, AxiosError } from "axios";
+import response from "react"
 
 export function LoginAreas({title,subTitle,but}){
+    const navigate = useNavigate()
+    const [userEmail, addUserEmail] = useState("");
+    const [userPassword, addUserPassword] = useState("");
+
+    const handleUserEmail = (event) => addUserEmail(event.target.value);
+    const handleUserPassword = (event) => addUserPassword(event.target.value);
+
+    function addUser() {
+
+        const regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        if (regex.test(userEmail)) {
+          let userInfo = {
+            senha: userPassword,
+            email: userEmail,
+          };
+          
+              axios
+                .post("http://localhost:3001/login", userInfo)
+                .then(response => {
+                  if (response.status === 200) {
+                    console.log("usuário logado");
+                    const token = {token: response?.data?.token}
+                    localStorage.setItem("powerup", JSON.stringify(token))
+                    /* console.log(token) */
+                    navigate("/Home");
+                  }
+                })
+                .catch((err) => {
+                  console.log(err);
+                });
+                console.log("Endereço de email válido.");
+              } else {
+                console.log("Endereço de email inválido.");
+              }
+              
+            }
+
+
     return (
         <div className='col-span-12  h-max  mx-[80px] flex justify-center items-center'>
         <div className="flex flex-col items-center justify-center w-[400px] h-max p-[50px] shadow-2xl rounded-[12px] my-[30px] ">
