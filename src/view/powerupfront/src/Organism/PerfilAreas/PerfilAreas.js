@@ -11,6 +11,20 @@ import Grafict from "./Grafict";
 
 export function PerfilAreas(){
     
+    const [idade, setIdade] = useState("");
+    const [peso, setPeso] = useState("");
+    const [altura, setAltura] = useState("");
+    const [genero, setGenero] = useState("");
+    const [fator, setFator] = useState("");
+
+    const handleIdadeChange = (e) => setIdade(e.target.value);
+    const handlePesoChange = (e) => setPeso(e.target.value);
+    const handleAlturaChange = (e) => setAltura(e.target.value);
+    const handleGeneroChange = (e) => setGenero(e.target.value);
+    const handleFatorChange = (e) => setFator(e.target.value);
+    const [perfil, setPerfil] = useState([]);
+
+    const pesoData = perfil.map((peso)=>(peso.peso))
 
     return(
         <div className="grid grid-cols-12">
