@@ -20,3 +20,21 @@ export const get = async (req,res) =>{
         res.status(400).send(error)
     }
 }
+
+export const getId = async(req,res) => {
+    try {
+        const perfil = await getById(Number(req.params.id))
+        res.status(200).send(perfil)
+    } catch (error) {
+        res.status(400).send(error)
+    }
+}
+
+export const update = async(req, res) => {
+    try {
+        const perfil = await updatePerfil(Number(req.params.id),req.body)
+        res.status(200).send(perfil)
+    } catch (error) {
+        res.status(400).send(error)
+    }
+}
