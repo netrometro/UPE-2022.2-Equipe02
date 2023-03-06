@@ -26,6 +26,52 @@ export function PerfilAreas(){
 
     const pesoData = perfil.map((peso)=>(peso.peso))
 
+    function addPerfil(e){
+
+        e.preventDefault()
+
+        let perfilInfo = {
+            idade: idade,
+            peso: peso,
+            altura: altura,
+            genero: genero,
+            fatorAtividade: fator
+        }
+        const token = JSON.parse(localStorage.getItem("powerup")).token; // obter token do localStorage
+        const config = {
+            headers: {
+              Authorization: `Bearer ${token}`
+            }
+          };
+
+        axios.post("http://localhost:3001/perfil", perfilInfo, config)
+                .then(response => {
+                    if(response.status === 200){
+                        alert("Informações cadastradas")
+                        console.log("cadastrado")
+                    }
+                }).catch((err) => {
+                    console.log(err);
+                });
+        
+        
+    }
+
+    useEffect(() => {
+        const token = JSON.parse(localStorage.getItem("powerup")).token; // obter token do localStorage
+        const config = {
+          headers: { Authorization: `Bearer ${token}` },
+        };
+        axios.get("http://localhost:3001/perfil", config)
+          .then((response) => {
+            setPerfil(response.data);
+          })
+          .catch((error) => {
+            console.log(error);
+            alert("Você não tem acesso. Faça login")
+          });
+    }, []);
+
     return(
         <div className="grid grid-cols-12">
         <div className='col-span-6  h-max  mx-[80px] flex justify-start items-center'>
