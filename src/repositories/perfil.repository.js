@@ -15,3 +15,34 @@ export const getAll = async() =>{
     const perfils = await prisma.perfil.findMany({})
     return perfils
 }
+
+export const getById = async(id) =>{
+    const perfil = await prisma.perfil.findUnique({
+        where:{
+            id
+        }
+    })
+    return perfil
+}
+
+//atualizar tabela
+export const updatePerfil = async(id, data) => {
+    const perfil =  await prisma.perfil.update({
+        where:{
+            id
+        },
+        data
+    })
+    return perfil
+}
+
+//deletar da tabela
+
+export const deletePerfil = async(id) => {
+    await prisma.perfil.delete({
+        where:{
+            id
+        }
+    })
+    return
+}
