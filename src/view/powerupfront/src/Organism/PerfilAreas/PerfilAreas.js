@@ -4,9 +4,7 @@ import { Inputs } from "../../Atomic/Input/Inputs";
 import { useEffect, useState } from "react";
 import axios, { isCancel, AxiosError } from "axios";
 import response from "react";
-import {Chart} from "react-google-charts"
-import {BarChart} from "./GraficoPerfil";
-import Grafict from "./Grafict";
+
 
 
 export function PerfilAreas(){
