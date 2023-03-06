@@ -4,6 +4,7 @@ import { Inputs } from "../../Atomic/Input/Inputs";
 import { useEffect, useState } from "react";
 import axios, { isCancel, AxiosError } from "axios";
 import response from "react";
+import Barchart from "./Grafict";
 
 
 
@@ -136,7 +137,7 @@ export function PerfilAreas(){
                 <div className='w-[600px] h-max p-[50px] shadow-2xl rounded-[12px] my-[30px]'>
                     <p className="p-[5px] m-[10px]">Gráficos</p >
                     <p className="p-[5px] m-[10px]">Histórico de peso</p>
-                    
+                    <Barchart/>
                 </div>
 
                 <div className='w-[600px] h-max p-[50px] shadow-2xl rounded-[12px] my-[30px]'>
