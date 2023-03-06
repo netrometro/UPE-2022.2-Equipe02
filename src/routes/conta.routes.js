@@ -1,4 +1,4 @@
-import {create,get,getId, update, remove} from '../controllers/conta.controller'
+import {create,get,getId, update, remove} from '../controller/conta.controller'
 const {veryToken} = require("../middlewares/autenticacao")
 
 const rotas_conta = app =>{

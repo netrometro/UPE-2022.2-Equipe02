@@ -1,4 +1,4 @@
-import {create,get,getId, update, remove} from '../controllers/perfil.controller'
+import {create,get,getId, update, remove} from '../controller/perfil.controller'
 const {veryToken} = require("../middlewares/autenticacao")
 const rotas_perfil = app =>{
     //criar

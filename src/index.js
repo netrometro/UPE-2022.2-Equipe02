@@ -1,7 +1,7 @@
-import express from "express";
-import cors from "cors";
-import dotenv from "dotenv";
-
+import express from 'express';
+import cors from 'cors';
+import dotenv from 'dotenv';
+import rotas from './routes';
 
 dotenv.config()
 const app = express();
@@ -10,12 +10,8 @@ const app = express();
 app.use(cors())
 app.use(express.json())
 
-/* require("../src/routes/index")(app) */
+rotas(app)
 
-try {
-    app.listen(3001)
-    console.log("Servidor iniciado")
-} catch (error) {
-    console.log(error)
-}
+app.listen(3001)
+console.log("Servidor Iniciado")
 

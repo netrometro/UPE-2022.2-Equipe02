@@ -10,11 +10,14 @@
   },
   "dependencies": {
     "@prisma/client": "^4.11.0",
+    "bcrypt": "^5.1.0",
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
     "prisma": "^4.11.0",
-    "react-router-dom": "^6.8.2"
+    "react-router-dom": "^6.8.2",
+    "zod": "^3.21.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.21",
