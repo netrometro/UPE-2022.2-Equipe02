@@ -10,13 +10,10 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model Perfil{
+model Conta{
   id Int @id @default(autoincrement())
-  idade String
-  peso String
-  altura String
-  genero String
-  fatorAtividade String
-  
-}
+  email String @unique
+  senha String
+  nome String
 
+}
