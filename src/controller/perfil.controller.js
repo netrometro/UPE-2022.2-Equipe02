@@ -38,3 +38,13 @@ export const update = async(req, res) => {
         res.status(400).send(error)
     }
 }
+
+export const remove = async(req, res) => {
+    try {
+        await deletePerfil(Number(req.params.id))
+        res.status(200).send()
+    } catch (error) {
+        res.status(400).send(error)
+    }
+    
+}
