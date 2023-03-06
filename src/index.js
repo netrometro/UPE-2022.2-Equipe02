@@ -13,7 +13,7 @@ app.use(express.json())
 /* require("../src/routes/index")(app) */
 
 try {
-    app.listen(3000)
+    app.listen(3001)
     console.log("Servidor iniciado")
 } catch (error) {
     console.log(error)
