@@ -17,3 +17,13 @@ model Conta{
   nome String
 
 }
+
+
+model Perfil{
+  id Int @id @default(autoincrement())
+  idade String
+  peso String
+  altura String
+  genero String
+  fatorAtividade String
+}
