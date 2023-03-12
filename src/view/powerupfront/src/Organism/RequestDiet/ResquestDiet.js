@@ -58,13 +58,25 @@ export function RequestDiet(){
 
     const [tipo, setTipo] = useState("");
     const [kal, setKal] = useState("");
-    const [usertipo, setUserTipo] = useState("inicial");
+    const [usertipo, setUserTipo] = useState("first");
 
     const handleTipoChange = (e) => setTipo(e.target.value);
     const handleKalChange = (e) => setKal(e.target.value);
 
     function onClickRequest(){
+        if(kal <= 2000 && kal >= 1000){
+            if(tipo === "emagrecimento"){
+                setUserTipo("emagrecer")
         
+                
+            }else if(tipo === "ganho"){
+                setUserTipo("ganhar")
+                
+            }else if(tipo === "manter"){
+                setUserTipo("manter")
+                
+            }
+        }
     }
 
     return(
