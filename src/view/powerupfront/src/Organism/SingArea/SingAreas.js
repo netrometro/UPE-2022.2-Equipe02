@@ -17,9 +17,9 @@ export function SingAreas({title,subTitle,but1,but2}){
   const handleUserEmailChange = (event) => setUserEmail(event.target.value);
   const handleUserPasswordChange = (event) => setUserPassword(event.target.value);
     function addUser() {
-        if(userEmail || userEmail || userPassword === ''){
+        /* if(userEmail === '' || userEmail === '' || userPassword === ''){
           alert("Preencha todos os campos")
-        }
+        } */
     
         const regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
         if (regex.test(userEmail)) {

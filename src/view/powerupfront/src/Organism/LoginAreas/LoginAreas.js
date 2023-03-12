@@ -38,6 +38,7 @@ export function LoginAreas({title,subTitle,but}){
                 })
                 .catch((err) => {
                   console.log(err);
+                  alert("Usuário não existe")
                 });
                 console.log("Endereço de email válido.");
               } else {
