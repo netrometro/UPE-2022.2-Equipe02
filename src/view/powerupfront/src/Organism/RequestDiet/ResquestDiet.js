@@ -1,6 +1,7 @@
 import { Buttons } from "../../Atomic/Buttons/Buttons";
 import { Inputs } from "../../Atomic/Input/Inputs";
 import { useEffect, useState } from "react";
+import jsPDF from 'jspdf';
 
 export function RequestDiet(){
 
