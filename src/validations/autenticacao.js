@@ -4,3 +4,5 @@ exports.autenticacaoValidation = z.object({
     email: z.string().email(),
     senha: z.string(),
 })
+
+//verificar login
