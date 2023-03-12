@@ -76,22 +76,40 @@ export function RequestDiet(){
                 setUserTipo("manter")
                 
             }
+        }else if(kal > 2000 && kal <= 3000){
+            if(tipo === "emagrecimento"){
+                alert("Não é muito recomendado uma dieta de emagrecimento para essa quantidade de calorias")
+            }else if(tipo === "ganho"){
+                setUserTipo("ganharM")
+                
+            }else if(tipo === "manter"){
+                setUserTipo("manterM")
+                
+            }
+        }else if(kal === null || kal === undefined){
+            alert("digite um valor para receber a dieta correta")
+        }else{
+            alert("digite um valor para receber a dieta correta")
         }
+        
+        
     }
+
+    let type = usertipo;
 
     return(
         <div className="flex flex-col items-center justify-center pt-[20px]" >
             <p>Request Diet</p>
             <div className=" w-max h-max p-[50px] shadow-2xl rounded-[12px] my-[30px] ">
-                    <select name="" id="" >
+                    <select name="" id="" onChange={handleTipoChange} >
                         <option value="emagrecimento">Emagrecimento</option>
                         <option value="ganho">Ganho de massa</option>
                         <option value="manter">Keep</option>
                     </select>
                     
                     <p>Calories:</p>
-                    <Inputs type="number"/>
-                    <Buttons type="submit" name="Enter"/>
+                    <Inputs type="number" func={handleKalChange}/>
+                    <Buttons type="submit" name="Enter" func={onClickRequest} />
 
                     <div className=" w-[1300px] h-max p-[50px]  rounded-[12px] my-[30px] ">
                         <div className="">
@@ -100,27 +118,27 @@ export function RequestDiet(){
 
                         <div className=" shadow-inner p-[20px] m-[10px] duration-500 hover:shadow-2xl ">
                             <p className="my-[10px]">Break fast</p>
-                            <p></p>
+                            <p>{diet[type].cafe}</p>
                         </div>
 
                         <div className=" shadow-inner p-[20px] m-[10px] duration-500 hover:shadow-2xl">
                             <p className="my-[10px]">Morning snacks</p>
-                            <p></p>
+                            <p>{diet[type].lancheM}</p>
                         </div>
 
                         <div className=" shadow-inner p-[20px] m-[10px] duration-500 hover:shadow-2xl">
                             <p className="my-[10px]">Lunch</p>
-                            <p></p>
+                            <p>{diet[type].almoco}</p>
                         </div>
 
                         <div className=" shadow-inner p-[20px] m-[10px] duration-500 hover:shadow-2xl">
                             <p className="my-[10px]">Afternoon snacks</p>
-                            <p></p>
+                            <p>{diet[type].lancheT}</p>
                         </div>
 
                         <div className=" shadow-inner p-[20px] m-[10px] duration-500 hover:shadow-2xl">
                             <p className="my-[10px]">Dinner</p>
-                            <p></p>
+                            <p>{diet[type].janta}</p>
                         </div>
                     </div>
             </div>
