@@ -1,5 +1,6 @@
 import { Buttons } from "../../Atomic/Buttons/Buttons";
 import { Inputs } from "../../Atomic/Input/Inputs";
+import { useEffect, useState } from "react";
 
 export function RequestDiet(){
 
@@ -34,7 +35,33 @@ export function RequestDiet(){
             "janta":["120g de peito de frango grelhado - ","1 batata doce cozida (150g) - ","1 porção de legumes cozidos no vapor (200g) - ","1 porção de salada verde com azeite e limão"],
 
         },
+        "emagrecerM":{
+            
+        },
+        "ganharM":{
+            "cafe":["4 ovos inteiros mexidos (200g) - ","2 fatias de pão integral (60g) - ","1 abacate médio (150g) - ","1 xícara de café com leite desnatado (240ml)"],
+            "lancheM":["1 scoop de whey protein (30g) misturado com água ou leite desnatado (240ml) - ","1 banana média (100g) - ","1 porção de nuts (30g)"],
+            "almoco":["200g de filé de frango grelhado - ","1 xícara de arroz integral cozido (120g) - ","1 xícara de feijão cozido (160g) - ","1 porção de legumes cozidos no vapor (200g) - ","1 porção de salada verde com azeite e limão"],
+            "lancheT":["1 scoop de whey protein (30g) misturado com água ou leite desnatado (240ml) - ","1 maçã média (150g) - ","1 barrinha de cereais (30g)"],
+            "janta":["200g de filé de carne vermelha grelhado - ","1 batata doce grande (200g) - ","1 porção de legumes cozidos no vapor (200g) - ","1 porção de salada verde com azeite e limão"],
+
+        },
+        "manterM":{
+            "cafe":["3 ovos inteiros mexidos (150g) - ","2 fatias de pão integral (60g) - " ,"1 xícara de café com leite desnatado (240ml) - ","1 porção de frutas (200g)"],
+            "lancheM":["1 porção de frutas (200g) - ","1 iogurte natural desnatado (200ml) - ","1 porção de nuts (30g)"],
+            "almoco":["150g de peito de frango grelhado - ","1 xícara de arroz integral cozido (120g) - ","1 xícara de feijão cozido (160g) - ","1 porção de legumes cozidos no vapor (200g) - ","1 porção de salada verde com azeite e limão"],
+            "lancheT":["1 scoop de whey protein (30g) misturado com água ou leite desnatado (240ml) - ","1 porção de frutas (100g) - ","1 barrinha de cereais (30g)"],
+            "janta":["150g de filé de salmão grelhado - ","1 xícara de quinoa cozida (120g) - ","1 porção de legumes cozidos no vapor (200g) - ","1 porção de salada verde com azeite e limão"],
+
+        },
     }
+
+    const [tipo, setTipo] = useState("");
+    const [kal, setKal] = useState("");
+    const [usertipo, setUserTipo] = useState("inicial");
+
+    const handleTipoChange = (e) => setTipo(e.target.value);
+    const handleKalChange = (e) => setKal(e.target.value);
 
     return(
         <div className="flex flex-col items-center justify-center pt-[20px]" >
