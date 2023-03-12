@@ -15,9 +15,23 @@ model Conta{
   email String @unique
   senha String
   nome String
+  perfil Perfil?
+  imc IMC?
+  jantar Jantar[]
+  cafe Cafe[]
+  lanche_manha Lanche_manha[]
+  almoco Almoco[]
+  lanche_tarde Lanche_tarde[]
 
 }
 
+model IMC{
+  id Int @id @default(autoincrement())
+  valor Float
+  id_conta Int @unique
+  conta Conta @relation(fields: [id_conta], references: [id])
+  
+}
 
 model Perfil{
   id Int @id @default(autoincrement())
@@ -26,4 +40,70 @@ model Perfil{
   altura String
   genero String
   fatorAtividade String
+  id_conta Int @unique
+  conta Conta @relation(fields: [id_conta], references: [id])
+}
+
+model Jantar{
+  id Int @id @default(autoincrement())
+  proteina String?
+  carboidrato String?
+  gordura String?
+  nome_alimento String?
+  quantidade String?
+  id_conta Int 
+  conta Conta @relation(fields: [id_conta], references: [id])
+ 
+  
+}
+
+model Cafe{
+  id Int @id @default(autoincrement())
+  proteina String?
+  carboidrato String?
+  gordura String?
+  nome_alimento String?
+  quantidade String?
+  id_conta Int 
+  conta Conta @relation(fields: [id_conta], references: [id])
+  
+
+}
+
+model Lanche_manha{
+  id Int @id @default(autoincrement())
+  proteina String?
+  carboidrato String?
+  gordura String?
+  nome_alimento String?
+  quantidade String?
+  id_conta Int 
+  conta Conta @relation(fields: [id_conta], references: [id])
+  
+}
+
+model Almoco{
+  id Int @id @default(autoincrement())
+  proteina String?
+  carboidrato String?
+  gordura String?
+  nome_alimento String?
+  quantidade String?
+  id_conta Int 
+  conta Conta @relation(fields: [id_conta], references: [id])
+  
+  
+}
+
+model Lanche_tarde{
+  id Int @id @default(autoincrement())
+  proteina String?
+  carboidrato String?
+  gordura String?
+  nome_alimento String?
+  quantidade String?
+  id_conta Int
+  conta Conta @relation(fields: [id_conta], references: [id])
+ 
+ 
 }
