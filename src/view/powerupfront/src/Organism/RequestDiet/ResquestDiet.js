@@ -63,6 +63,10 @@ export function RequestDiet(){
     const handleTipoChange = (e) => setTipo(e.target.value);
     const handleKalChange = (e) => setKal(e.target.value);
 
+    function onClickRequest(){
+        
+    }
+
     return(
         <div className="flex flex-col items-center justify-center pt-[20px]" >
             <p>Request Diet</p>
