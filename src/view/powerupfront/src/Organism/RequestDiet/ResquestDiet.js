@@ -96,16 +96,41 @@ export function RequestDiet(){
         
     }
 
+    let print = []
+
     let type = usertipo;
+
+    print.push(diet[type].cafe)
+    print.push(diet[type].lancheM)
+    print.push(diet[type].almoco)
+    print.push(diet[type].lancheT)
+    print.push(diet[type].janta)
+
+    let arrayPrint = ["CAFÉ",...diet[type].cafe,"LANCHE MANHÃ",...diet[type].lancheM,"ALMOÇO",...diet[type].almoco,"LANCHE TARDE",...diet[type].lancheT,"JANTAR",...diet[type].janta]
+
+    function gerarPDF() {
+
+        console.log("teste pdf")
+        // Crie um novo objeto jsPDF
+        const doc = new jsPDF();
+      
+        // Selecione o elemento que deseja exportar como PDF
+        const element = document.getElementById('elemento-pdf');
+      
+        doc.text(arrayPrint,10,10)
+       
+
+        doc.save('dieta.pdf');
+      }
 
     return(
         <div className="flex flex-col items-center justify-center pt-[20px]" >
             <p>Request Diet</p>
             <div className=" w-max h-max p-[50px] shadow-2xl rounded-[12px] my-[30px] ">
                     <select name="" id="" onChange={handleTipoChange} >
-                        <option value="emagrecimento">Emagrecimento</option>
-                        <option value="ganho">Ganho de massa</option>
-                        <option value="manter">Keep</option>
+                        <option value="emagrecimento">loose weight</option>
+                        <option value="ganho">Gain mass</option>
+                        <option value="manter">Keep weight</option>
                     </select>
                     
                     <p>Calories:</p>
@@ -141,6 +166,9 @@ export function RequestDiet(){
                             <p className="my-[10px]">Dinner</p>
                             <p>{diet[type].janta}</p>
                         </div>
+                    </div>
+                    <div>
+                        <Buttons name="Gerar PDF" func={gerarPDF}></Buttons>
                     </div>
             </div>
         </div>
