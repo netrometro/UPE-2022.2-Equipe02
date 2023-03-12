@@ -4,6 +4,7 @@ import './App.css';
 import { SingUp } from "./Templates/SingUp/SingUp";
 import { Home } from "./Templates/Home/Home";
 import { Perfil } from "./Templates/Perfil/Perfil";
+import { Diet } from "./Templates/Diet/Diet";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route exact path='/cadastro' element={<SingUp/>}></Route>
           <Route exact path='/home' element={<Home/>}></Route>
           <Route exact path='/perfil' element={<Perfil/>}></Route>
+          <Route exact path='/diet' element={<Diet/>}></Route>
           </Routes>
         
         
