@@ -1,4 +1,4 @@
-import {create, remove, deleteAll, getByUser} from '../controllers/lanche_tarde.controller'
+import {create, remove, deleteAll, getByUser} from '../controller/lanche_tarde.controller'
 
 const rotas_lanche_tarde = app =>{
     //inserir informação
