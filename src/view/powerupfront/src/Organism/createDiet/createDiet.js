@@ -9,6 +9,67 @@ const{userId} = require('./getId')
 
 export function CreateDiet(){
 
+    const [nomeCafe, setNomeCafe] = useState("");
+    const [quantidadeCafe, setQuantidadeCafe] = useState("");
+    const [quantidadeCafeProteina, setQtCafeProteina] = useState("");
+    const [quantidadeCafeCarb, setQtCafeCarb] = useState("");
+    const [quantidadeCafeGord, setQtCafeGord] = useState("");
+
+    
+    const [nomeLancheM, setNomeLancheM] = useState("");
+    const [quantidadeLancheM, setQuantidadeLancheM] = useState("");
+    const [quantidadeLancheMProteina, setQtLancheMProteina] = useState("");
+    const [quantidadeLancheMCarb, setQtLancheMCarb] = useState("");
+    const [quantidadeLancheMGord, setQtLancheMGord] = useState("");
+    
+    const [nomeAlmoco, setNomeAlmoco] = useState("");
+    const [quantidadeAlmoco, setQuantidadeAlmoco] = useState("");
+    const [quantidadeAlmocoProteina, setQtAlmocoProteina] = useState("");
+    const [quantidadeAlmocoCarb, setQtAlmocoCarb] = useState("");
+    const [quantidadeAlmocoGord, setQtAlmocoGord] = useState("");
+    
+    const [nomeLancheT, setNomeLancheT] = useState("");
+    const [quantidadeLancheT, setQuantidadeLancheT] = useState("");
+    const [quantidadeLancheTProteina, setQtLancheTProteina] = useState("");
+    const [quantidadeLancheTCarb, setQtLancheTCarb] = useState("");
+    const [quantidadeLancheTGord, setQtLancheTGord] = useState("");
+
+    const [nomeJanta, setNomeJanta] = useState("");
+    const [quantidadeJanta, setQuantidadeJanta] = useState("");
+    const [quantidadeJantaProteina, setQtJantaProteina] = useState("");
+    const [quantidadeJantaCarb, setQJantaCarb] = useState("");
+    const [quantidadeJantaGord, setQJantaGord] = useState("");
+
+    const handleNomeCafe = (event) => setNomeCafe(event.target.value);
+    const handleQtCafe = (event) => setQuantidadeCafe(event.target.value);
+    const handleQtCafeProt = (event) => setQtCafeProteina(event.target.value);
+    const handleQtCafeCarb = (event) => setQtCafeCarb(event.target.value);
+    const handleQtCafeGord = (event) => setQtCafeGord(event.target.value);
+    
+    const handleNomeLancheM = (event) => setNomeLancheM(event.target.value);
+    const handleQtLancheM = (event) => setQuantidadeLancheM(event.target.value);
+    const handleQtLancheMProt = (event) => setQtLancheMProteina(event.target.value);
+    const handleQtLancheMCarb = (event) => setQtLancheMCarb(event.target.value);
+    const handleQLancheMGord = (event) => setQtLancheMGord(event.target.value);
+    
+    const handleNomeAlmoco = (event) => setNomeAlmoco(event.target.value);
+    const handleQtAlmoco = (event) => setQuantidadeAlmoco(event.target.value);
+    const handleQtAlmocoProt = (event) => setQtAlmocoProteina(event.target.value);
+    const handleQtAlmocoCarb = (event) => setQtAlmocoCarb(event.target.value);
+    const handleQtAlmocoAGord = (event) => setQtAlmocoGord(event.target.value);
+
+    const handleNomeLancheT = (event) => setNomeLancheT(event.target.value);
+    const handleQtLancheT = (event) => setQuantidadeLancheT(event.target.value);
+    const handleQtLancheTProt = (event) => setQtLancheTProteina(event.target.value);
+    const handleQtLancheTCarb = (event) => setQtLancheTCarb(event.target.value);
+    const handleQtLancheTGord = (event) => setQtLancheTGord(event.target.value);
+
+    const handleNomeJanta = (event) => setNomeJanta(event.target.value);
+    const handleQtJanta = (event) => setQuantidadeJanta(event.target.value);
+    const handleQtJantaProt = (event) => setQtJantaProteina(event.target.value);
+    const handleQtJantaCarb = (event) => setQJantaCarb(event.target.value);
+    const handleQtJantaAGord = (event) => setQJantaGord(event.target.value);
+
     return(
         <div className="flex flex-col items-center justify-center">
         <div className=" w-max h-max p-[50px] shadow-2xl rounded-[12px] my-[30px] ">
@@ -33,7 +94,7 @@ export function CreateDiet(){
             
         </div>
         <div>
-            <Link to="/verDieta">
+            <Link to="/getDiet">
                 <Buttons name="Ver Dieta"/>
             </Link>
             

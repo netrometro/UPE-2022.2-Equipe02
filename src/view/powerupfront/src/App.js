@@ -5,6 +5,7 @@ import { SingUp } from "./Templates/SingUp/SingUp";
 import { Home } from "./Templates/Home/Home";
 import { Perfil } from "./Templates/Perfil/Perfil";
 import { Diet } from "./Templates/Diet/Diet";
+import { GetDiet } from "./Organism/getDiet/getDiet";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route exact path='/home' element={<Home/>}></Route>
           <Route exact path='/perfil' element={<Perfil/>}></Route>
           <Route exact path='/diet' element={<Diet/>}></Route>
+          <Route exact path='/getDiet' element={<GetDiet/>}></Route>
           </Routes>
         
         

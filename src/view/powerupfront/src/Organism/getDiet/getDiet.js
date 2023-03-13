@@ -16,7 +16,7 @@ export function GetDiet(){
         <div>
              <Headers/>
             <div className="m-[20px]">
-                <Link to="/Dieta">
+                <Link to="/Diet">
                     <BackButtons name="<-"/>
                 </Link>
             </div>
