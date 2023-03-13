@@ -70,6 +70,54 @@ export function CreateDiet(){
     const handleQtJantaCarb = (event) => setQJantaCarb(event.target.value);
     const handleQtJantaAGord = (event) => setQJantaGord(event.target.value);
 
+    let cafe = {
+        proteina: quantidadeCafeProteina,
+        carboidrato: quantidadeCafeCarb,
+        gordura: quantidadeCafeGord,
+        nome_alimento: nomeCafe,
+        quantidade: quantidadeCafe,
+        id_conta: userId,
+    }
+
+
+    let lancheManha = {
+        proteina: quantidadeLancheMProteina,
+        carboidrato: quantidadeLancheMCarb,
+        gordura: quantidadeLancheMGord,
+        nome_alimento: nomeLancheM,
+        quantidade: quantidadeLancheM,
+        id_conta: userId,
+    }
+
+    let almoco = {
+        proteina: quantidadeAlmocoProteina,
+        carboidrato: quantidadeAlmocoCarb,
+        gordura: quantidadeAlmocoGord,
+        nome_alimento: nomeAlmoco,
+        quantidade: quantidadeAlmoco,
+        id_conta: userId,
+    }
+
+    let lancheTarde = {
+        proteina: quantidadeLancheTProteina,
+        carboidrato: quantidadeLancheTCarb,
+        gordura: quantidadeLancheTGord,
+        nome_alimento: nomeLancheT,
+        quantidade: quantidadeLancheT,
+        id_conta: userId,
+    }
+
+    let jantar = {
+        proteina: quantidadeJantaProteina,
+        carboidrato: quantidadeJantaCarb,
+        gordura: quantidadeJantaGord,
+        nome_alimento: nomeJanta,
+        quantidade: quantidadeJanta,
+        id_conta: userId,
+    }
+
+
+
     return(
         <div className="flex flex-col items-center justify-center">
         <div className=" w-max h-max p-[50px] shadow-2xl rounded-[12px] my-[30px] ">
