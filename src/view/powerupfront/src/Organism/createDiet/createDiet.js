@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Buttons } from "../../Atomic/Buttons/Buttons";
-import { DietForm } from "../DietForm/DietForm";
+import { DietForm } from "../DietForm/dietForm";
 import { useState } from "react";
 import axios, { isCancel, AxiosError } from "axios";
 import response from "react"
