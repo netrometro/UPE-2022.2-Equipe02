@@ -116,6 +116,79 @@ export function CreateDiet(){
         id_conta: userId,
     }
 
+    function addCafe(event){
+        event.preventDefault()
+        axios
+            .post("http://localhost:3001/cafe", cafe)
+            .then(response => {
+              if (response.status === 200) {
+                console.log("café cadastrado");
+                alert("Café cadastrado")
+              }
+            })
+            .catch((err) => {
+              console.log(err);
+            });
+    }
+
+    function addLancheM(event){
+      //event.preventDefault()
+        axios
+            .post("http://localhost:3001/lanche-da-manha", lancheManha)
+            .then(response => {
+              if (response.status === 200) {
+                console.log("Lanche cadastrado");
+                alert("Lanche cadastrado")
+              }
+            })
+            .catch((err) => {
+              console.log(err);
+            });
+    }
+
+    function addAlmoco(){
+        axios
+            .post("http://localhost:3001/almoco", almoco)
+            .then(response => {
+              if (response.status === 200) {
+                console.log("Almoco cadastrado");
+                alert("Almoco cadastrado")
+              }
+            })
+            .catch((err) => {
+              console.log(err);
+            });
+    }
+
+    function addLancheT(){
+        axios
+            .post("http://localhost:3001/lanche-da-tarde", lancheTarde)
+            .then(response => {
+              if (response.status === 200) {
+                console.log("Lanche cadastrado");
+                alert("Lanche cadastrado")
+              }
+            })
+            .catch((err) => {
+              console.log(err);
+            });
+    }
+
+    function addJantar(){
+      
+        axios
+            .post("http://localhost:3001/jantar", jantar)
+            .then(response => {
+              if (response.status === 200) {
+                console.log("Jantar cadastrado");
+                alert("jantar cadastrado")
+              }
+            })
+            .catch((err) => {
+              console.log(err);
+              alert(err)
+            });
+    }
 
 
     return(
