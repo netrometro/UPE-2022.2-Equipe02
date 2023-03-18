@@ -114,6 +114,124 @@ export function CreateExercise(){
         repeticao: repeticaoD,
         id_conta: userId,
     }
+
+    function addSegunda(event){
+        event.preventDefault()
+        axios
+            .post("http://localhost:3001/segunda", ExerSg)
+            .then(response => {
+              if (response.status === 200) {
+                console.log("Exercício cadastrado");
+                toast.success("Exercício adicionado")
+              }
+            })
+            .catch((err) => {
+              console.log(err);
+            });
+            
+    }
+
+    function addTerca(event){
+      event.preventDefault()
+        axios
+            .post("http://localhost:3001/terca", ExerT)
+            .then(response => {
+              if (response.status === 200) {
+                console.log("Exercício cadastrado");
+                toast.success("Exercício adicionado")
+              }
+            })
+            .catch((err) => {
+              console.log(err);
+            });
+            
+    }
+
+    function addQuarta(event){
+      event.preventDefault()
+        axios
+            .post("http://localhost:3001/quarta", ExerQ)
+            .then(response => {
+              if (response.status === 200) {
+                console.log("Exercício cadastrado");
+                toast.success("Exercício adicionado")
+              }
+            })
+            .catch((err) => {
+              console.log(err);
+            });
+            
+    }
+
+    function addQuinta(event){
+      event.preventDefault()
+        axios
+            .post("http://localhost:3001/quinta", ExerQu)
+            .then(response => {
+              if (response.status === 200) {
+                console.log("Exercício cadastrado");
+                toast.success("Exercício adicionado")
+              }
+            })
+            .catch((err) => {
+              console.log(err);
+            });
+            
+    }
+
+    function addSexta(event){
+      event.preventDefault()
+      
+        axios
+            .post("http://localhost:3001/sexta", ExerSx)
+            .then(response => {
+              if (response.status === 200) {
+                console.log("Exercício cadastrado");
+                toast.success("Exercício adicionado")
+              }
+            })
+            .catch((err) => {
+              console.log(err);
+              alert(err)
+            });
+           
+    }
+
+    function addSabado(event){
+      event.preventDefault()
+      
+        axios
+            .post("http://localhost:3001/sabado", ExerSb)
+            .then(response => {
+              if (response.status === 200) {
+                console.log("Exercício cadastrado");
+                toast.success("Exercício adicionado")
+              }
+            })
+            .catch((err) => {
+              console.log(err);
+              alert(err)
+            });
+            
+    }
+
+    function addDomingo(event){
+      event.preventDefault()
+      
+        axios
+            .post("http://localhost:3001/domingo", ExerD)
+            .then(response => {
+              if (response.status === 200) {
+                console.log("Exercício cadastrado");
+                toast.success("Exercício adicionado")
+              }
+            })
+            .catch((err) => {
+              console.log(err);
+              alert(err)
+            });
+            
+    }
     return(
         <div className="flex flex-col items-center justify-center">
             <div className=" w-max h-max p-[50px] shadow-2xl rounded-[12px] my-[30px] ">
