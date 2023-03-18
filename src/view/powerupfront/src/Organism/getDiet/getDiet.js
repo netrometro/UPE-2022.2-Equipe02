@@ -7,7 +7,7 @@ import axios, { isCancel, AxiosError } from "axios";
 import response from "react";
 import { useEffect, useState } from "react";
 import jsPDF from 'jspdf';
-const{userId} = require("../createDiet/getId")
+const{userId} = require("../../getUser/getId")
 
 
 export function GetDiet(){
