@@ -15,7 +15,7 @@ export function Headers(){
                         </Link>
                     </li>
                     <li className="ml-[20px]">
-                        <Link to='/treino'>
+                        <Link to='/exercise'>
                             <p>Treino</p>
                         </Link>
                     </li>
