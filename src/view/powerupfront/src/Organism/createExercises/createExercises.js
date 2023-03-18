@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Buttons } from "../../Atomic/Buttons/Buttons";
-import { TreinoForm } from "../TreinoForms/treinoForms";
+import { ExercisesForms } from "../ExercisesForms/exerciseForms";
 import { useState } from "react";
 import axios, { isCancel, AxiosError } from "axios";
 import response from "react"
@@ -238,31 +238,31 @@ export function CreateExercise(){
                 <p>Treino</p>
                 <div className="grid grid-cols-12 gap-4">
                     <div className="col-span-3">
-                        <TreinoForm name="Segunda" nome={handleNomeS} serie={handleserieS} repeticao= {handlerepeticaoS} butFunc = {addSegunda} />
+                        <ExercisesForms name="Segunda" nome={handleNomeS} serie={handleserieS} repeticao= {handlerepeticaoS} butFunc = {addSegunda} />
                         <ToastContainer/>
                     </div>
                     <div className="col-span-3">
-                        <TreinoForm name="Terça"  nome={handleNomeT} serie={handleserieT} repeticao= {handlerepeticaoT} butFunc = {addTerca} />
+                        <ExercisesForms name="Terça"  nome={handleNomeT} serie={handleserieT} repeticao= {handlerepeticaoT} butFunc = {addTerca} />
                         <ToastContainer/>
                     </div>
                     <div className="col-span-3">
-                        <TreinoForm name="Quarta"  nome={handleNomeQ} serie={handleserieQ} repeticao= {handlerepeticaoQ} butFunc = {addQuarta} />
+                        <ExercisesForms name="Quarta"  nome={handleNomeQ} serie={handleserieQ} repeticao= {handlerepeticaoQ} butFunc = {addQuarta} />
                         <ToastContainer/>
                     </div>
                     <div className="col-span-3">
-                        <TreinoForm name="Quinta" nome={handleNomeQu} serie={handleserieQu} repeticao= {handlerepeticaoQu} butFunc = {addQuinta} />
+                        <ExercisesForms name="Quinta" nome={handleNomeQu} serie={handleserieQu} repeticao= {handlerepeticaoQu} butFunc = {addQuinta} />
                         <ToastContainer/>
                     </div>
                     <div className="col-span-3">
-                        <TreinoForm name="Sexta"  nome={handleNomeSx} serie={handleserieSx} repeticao= {handlerepeticaoSx} butFunc = {addSexta} />
+                        <ExercisesForms name="Sexta"  nome={handleNomeSx} serie={handleserieSx} repeticao= {handlerepeticaoSx} butFunc = {addSexta} />
                         <ToastContainer/>
                     </div>
                     <div className="col-span-3">
-                        <TreinoForm name="Sábado"  nome={handleNomeSb} serie={handleserieSb} repeticao= {handlerepeticaoSb} butFunc = {addSabado} />
+                        <ExercisesForms name="Sábado"  nome={handleNomeSb} serie={handleserieSb} repeticao= {handlerepeticaoSb} butFunc = {addSabado} />
                         <ToastContainer/>
                     </div>
                     <div className="col-span-3">
-                        <TreinoForm name="Domingo" nome={handleNomeD} serie={handleserieD} repeticao= {handlerepeticaoD} butFunc = {addDomingo} />
+                        <ExercisesForms name="Domingo" nome={handleNomeD} serie={handleserieD} repeticao= {handlerepeticaoD} butFunc = {addDomingo} />
                         <ToastContainer/>
                     </div>
                 </div>
