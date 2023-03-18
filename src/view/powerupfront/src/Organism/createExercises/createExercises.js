@@ -65,6 +65,55 @@ export function CreateExercise(){
     const handleNomeD = (event) => setNomeD(event.target.value);
     const handlerepeticaoD = (event) => setrepeticaoD(event.target.value);
     const handleserieD = (event) => setSerieD(event.target.value);
+
+    let ExerSg = {
+        nome: nomeS,
+        serie: serieS,
+        repeticao: repeticaoS,
+        id_conta: userId,
+    }
+
+    let ExerT = {
+        nome: nomeT,
+        serie: serieT,
+        repeticao: repeticaoT,
+        id_conta: userId,
+    }
+
+    let ExerQ = {
+        nome: nomeQ,
+        serie: serieQ,
+        repeticao: repeticaoQ,
+        id_conta: userId,
+    }
+
+    let ExerQu = {
+        nome: nomeQu,
+        serie: serieQu,
+        repeticao: repeticaoQu,
+        id_conta: userId,
+    }
+
+    let ExerSx = {
+        nome: nomeSx,
+        serie: serieSx,
+        repeticao: repeticaoSx,
+        id_conta: userId,
+    }
+
+    let ExerSb = {
+        nome: nomeSb,
+        serie: serieSb,
+        repeticao: repeticaoSb,
+        id_conta: userId,
+    }
+
+    let ExerD = {
+        nome: nomeD,
+        serie: serieD,
+        repeticao: repeticaoD,
+        id_conta: userId,
+    }
     return(
         <div className="flex flex-col items-center justify-center">
             <div className=" w-max h-max p-[50px] shadow-2xl rounded-[12px] my-[30px] ">
