@@ -7,6 +7,7 @@ import { Perfil } from "./Templates/Perfil/Perfil";
 import { Diet } from "./Templates/Diet/Diet";
 import { GetDiet } from "./Organism/getDiet/getDiet";
 import{Exercises} from "./Templates/Exercises/Exercises"
+import{GetExercises} from "./Organism/getExercises/GetExercises"
 
 function App() {
   return (
@@ -20,7 +21,7 @@ function App() {
           <Route exact path='/diet' element={<Diet/>}></Route>
           <Route exact path='/getDiet' element={<GetDiet/>}></Route>
           <Route exact path='/exercise' element={<Exercises/>}></Route>
-          
+          <Route exact path='/getExercises' element={<GetExercises/>}></Route>
           </Routes>
         
         

@@ -269,7 +269,7 @@ export function CreateExercise(){
                 
             </div>
             <div>
-                <Link to="/verTreino">
+                <Link to="/getExercises">
                     <Buttons name="Ver Treino"/>
                 </Link>
                 
