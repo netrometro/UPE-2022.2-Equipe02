@@ -1,4 +1,4 @@
-import {create,get,getId, update, remove, getByUser, deleteAll} from '../controllers/exer_quinta.controller'
+import {create,get,getId, update, remove, getByUser, deleteAll} from '../controller/exer_quinta.controller'
 
 const rotas_exer_quinta = app =>{
     //inserir informação

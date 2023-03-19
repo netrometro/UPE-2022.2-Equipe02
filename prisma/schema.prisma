@@ -22,6 +22,13 @@ model Conta{
   lanche_manha Lanche_manha[]
   almoco Almoco[]
   lanche_tarde Lanche_tarde[]
+   exer_segunda ExerSegunda[]
+  exer_terca ExerTerca[]
+  exer_quarta ExerQuarta[]
+  exer_quinta ExerQuinta[]
+  exer_sexta ExerSexta[]
+  exer_sabado ExerSabado[]
+  exer_domingo ExerDomingo[]
 
 }
 
@@ -105,5 +112,80 @@ model Lanche_tarde{
   id_conta Int
   conta Conta @relation(fields: [id_conta], references: [id])
  
+ 
+}
+
+model ExerSegunda{ 
+  id Int @id @default(autoincrement())
+  nome String?
+  serie String?
+  repeticao String?
+  id_conta Int 
+  conta Conta @relation(fields: [id_conta], references: [id])
+  
+}
+
+model ExerTerca{
+  id Int @id @default(autoincrement())
+  nome String?
+  serie String?
+  repeticao String?
+  id_conta Int 
+  conta Conta @relation(fields: [id_conta], references: [id])
+ 
+}
+
+model ExerQuarta{ 
+  id Int @id @default(autoincrement())
+  nome String?
+  serie String?
+  repeticao String?
+  id_conta Int 
+  conta Conta @relation(fields: [id_conta], references: [id])
+  
+
+}
+
+model ExerQuinta{
+  id Int @id @default(autoincrement())
+  nome String?
+  serie String?
+  repeticao String?
+  id_conta Int 
+  conta Conta @relation(fields: [id_conta], references: [id])
+  
+ 
+}
+
+model ExerSexta{ 
+  id Int @id @default(autoincrement())
+  nome String?
+  serie String?
+  repeticao String?
+  id_conta Int
+  conta Conta @relation(fields: [id_conta], references: [id])
+  
+
+}
+
+model ExerSabado{ 
+  id Int @id @default(autoincrement())
+  nome String?
+  serie String?
+  repeticao String?
+  id_conta Int 
+  conta Conta @relation(fields: [id_conta], references: [id])
+  
+
+}
+
+model ExerDomingo{
+  id Int @id @default(autoincrement())
+  nome String?
+  serie String?
+  repeticao String?
+  id_conta Int 
+  conta Conta @relation(fields: [id_conta], references: [id])
+  
  
 }

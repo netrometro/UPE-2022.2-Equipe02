@@ -151,7 +151,7 @@ export function GetExercises(){
            
             <Headers/>
             <div className="m-[20px]">
-                <Link to="/treino"><BackButtons name="<-"/></Link>
+                <Link to="/exercise"><BackButtons name="<-"/></Link>
             </div>
             <div className="flex flex-col items-center justify-center">
                 <div className=" w-max h-max p-[50px] shadow-2xl rounded-[12px] my-[30px] ">
