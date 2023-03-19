@@ -86,10 +86,14 @@ export function RequestExercises(){
         },
     }
 
-    const [fator, setFator] = useState("");
-    const [userFator, setUserFator] = useState("default")
+    const [factor, setFactor] = useState("");
+    const [userFactor, setUserFactor] = useState("default")
 
-    const handleFatorChange = (e) => setFator(e.target.value);
+    const handleFactorChange = (e) => setFactor(e.target.value);
+
+    function onClickResquestExecise(){
+
+    }
     
 
     return(
@@ -103,14 +107,14 @@ export function RequestExercises(){
                     <p className="my-[20px]">O seu fator atividade atual é:</p>
 
                     <div className="my-[20px]">
-                            <select name="" id="" onChange="" className="mr-[20px]">
+                            <select name="" id="" onChange={handleFactorChange} className="mr-[20px]">
                                 <option value="3">3</option>
                                 <option value="4">4</option>
                                 <option value="5">5</option>
                                 <option value="6">6</option>
                             </select>
 
-                            <Buttons  type="submit" name="Solicitar" func="" />    
+                            <Buttons  type="submit" name="Solicitar" func={onClickResquestExecise} />    
                     </div>
 
                     <div className=" w-[1300px] h-max p-[50px]  rounded-[12px] my-[30px] ">
