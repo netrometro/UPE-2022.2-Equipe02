@@ -1,6 +1,24 @@
 import { Buttons } from "../../Atomic/Buttons/Buttons";
 
 export function RequestExercises(){
+
+    const treino = {
+        "default":{
+            "parte1":[""],
+            "dia1":[""],
+            "parte2":[""],
+            "dia2":[""],
+            "parte3":[""],
+            "dia3":[""],
+            "parte4":[""],
+            "dia4":[""],
+            "parte5":[""],
+            "dia5":[""],
+            "parte6":[""],
+            "dia6":[""]
+        },
+    }
+
     return(
         <div>
             <div className="flex flex-col items-center justify-center pt-[20px]" >
