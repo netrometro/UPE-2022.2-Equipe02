@@ -50,6 +50,12 @@ export function RequestExercises(){
                             <p className="my-[10px] font-bold"></p>
                             <p></p>
                         </div>
+
+                        <div className=" shadow-inner p-[20px] m-[10px] duration-500 hover:shadow-2xl ">
+                            <p className="my-[10px] font-bold">Dia 5</p>
+                            <p className="my-[10px] font-bold"></p>
+                            <p></p>
+                        </div>
                     </div>
                 </div>
             </div>
