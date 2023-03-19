@@ -1,6 +1,7 @@
 import { Buttons } from "../../Atomic/Buttons/Buttons";
 import { useEffect, useState } from "react";
 import jsPDF from 'jspdf';
+import axios, { isCancel, AxiosError } from "axios";
 
 export function RequestExercises(){
 
@@ -89,8 +90,31 @@ export function RequestExercises(){
 
     const [factor, setFactor] = useState("");
     const [userFactor, setUserFactor] = useState("default")
+    const [data, getData] = useState([]);
 
     const handleFactorChange = (e) => setFactor(e.target.value);
+
+    useEffect(() => {
+        const token = JSON.parse(localStorage.getItem("powerup")).token; // obter token do localStorage
+        const config = {
+          headers: { Authorization: `Bearer ${token}` },
+        };
+
+        axios.get(`http://localhost:3001/perfil/`, config)
+        .then(reponse => {
+            console.log(reponse.data)
+            getData(reponse.data)
+        })
+        .catch((error) => {
+            console.log(error);
+            console.log("Deu erro");
+          });
+    }, []);
+
+    let perfilFator = data.map((fator, index) => { return fator.fatorAtividade})
+    let lastFactor = perfilFator[perfilFator.length - 1]
+    console.log(perfilFator);
+    console.log(lastFactor);
 
     function onClickResquestExecise(){
         if(factor === "3"){
@@ -137,7 +161,7 @@ export function RequestExercises(){
 
                     <p className="my-[20px]">Selecione o fator atividade desejado</p>
 
-                    <p className="my-[20px]">O seu fator atividade atual é:</p>
+                    <p className="my-[20px]">O seu fator atividade atual é: {lastFactor}</p>
 
                     <div className="my-[20px]">
                             <select name="" id="" onChange={handleFactorChange} className="mr-[20px]">
@@ -194,7 +218,7 @@ export function RequestExercises(){
                         <div className=" shadow-inner p-[20px] m-[10px] duration-500 hover:shadow-2xl ">
                             
                             <p className="my-[10px] font-bold">
-                                aviso
+                                {warning[1].aviso1}
                             </p>
                             
                         </div>
