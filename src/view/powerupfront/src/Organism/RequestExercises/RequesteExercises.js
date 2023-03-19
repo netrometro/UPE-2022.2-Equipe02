@@ -140,37 +140,37 @@ export function RequestExercises(){
                         <div className=" shadow-inner p-[20px] m-[10px] duration-500 hover:shadow-2xl ">
                             <p className="my-[10px] font-bold">Dia 1</p>
                             <p className="my-[10px] font-bold">{exercise[typeFator].parte1}</p>
-                            <p></p>
+                            <p>{exercise[typeFator].dia1}</p>
                         </div>
 
                         <div className=" shadow-inner p-[20px] m-[10px] duration-500 hover:shadow-2xl ">
                             <p className="my-[10px] font-bold">Dia 2</p>
                             <p className="my-[10px] font-bold">{exercise[typeFator].parte2}</p>
-                            <p></p>
+                            <p>{exercise[typeFator].dia2}</p>
                         </div>
 
                         <div className=" shadow-inner p-[20px] m-[10px] duration-500 hover:shadow-2xl ">
                             <p className="my-[10px] font-bold">Dia 3</p>
                             <p className="my-[10px] font-bold">{exercise[typeFator].parte3}</p>
-                            <p></p>
+                            <p>{exercise[typeFator].dia3}</p>
                         </div>
 
                         <div className=" shadow-inner p-[20px] m-[10px] duration-500 hover:shadow-2xl ">
                             <p className="my-[10px] font-bold">Dia 4</p>
                             <p className="my-[10px] font-bold">{exercise[typeFator].parte4}</p>
-                            <p></p>
+                            <p>{exercise[typeFator].dia4}</p>
                         </div>
 
                         <div className=" shadow-inner p-[20px] m-[10px] duration-500 hover:shadow-2xl ">
                             <p className="my-[10px] font-bold">Dia 5</p>
                             <p className="my-[10px] font-bold">{exercise[typeFator].parte5}</p>
-                            <p></p>
+                            <p>{exercise[typeFator].dia5}</p>
                         </div>
 
                         <div className=" shadow-inner p-[20px] m-[10px] duration-500 hover:shadow-2xl ">
                             <p className="my-[10px] font-bold">Dia 6</p>
                             <p className="my-[10px] font-bold">{exercise[typeFator].parte6}</p>
-                            <p></p>
+                            <p>{exercise[typeFator].dia6}</p>
                         </div>
 
                         <div className=" shadow-inner p-[20px] m-[10px] duration-500 hover:shadow-2xl ">
