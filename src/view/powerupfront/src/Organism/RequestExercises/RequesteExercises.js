@@ -70,6 +70,10 @@ export function RequestExercises(){
                             </p>
                             
                         </div>
+
+                        <div>
+                            <Buttons name="Gerar PDF" func=""></Buttons>
+                        </div>
                     </div>
                 </div>
             </div>
