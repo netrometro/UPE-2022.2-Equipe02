@@ -89,7 +89,8 @@ export function RequestExercises(){
     const [fator, setFator] = useState("");
     const [userFator, setUserFator] = useState("default")
 
-
+    const handleFatorChange = (e) => setFator(e.target.value);
+    
 
     return(
         <div>
