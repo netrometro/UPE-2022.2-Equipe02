@@ -1,8 +1,9 @@
 import { Buttons } from "../../Atomic/Buttons/Buttons";
+import { useEffect, useState } from "react";
 
 export function RequestExercises(){
 
-    const treino = {
+    const exercise = {
         "default":{
             "parte1":[""],
             "dia1":[""],
@@ -79,11 +80,14 @@ export function RequestExercises(){
         },
     }
 
-    const aviso = {
+    const warning = {
         "1":{
             "aviso1":["Lembre-se de aquecer antes de cada treino e de alongar após. Escolha uma carga que permita que você complete todas as repetições com boa forma e descanse entre as séries por cerca de 60-90 segundos. Se possível, tente aumentar gradualmente a carga e/ou o número de repetições para progredir. Certifique-se de ter um programa de treinamento personalizado, que leve em consideração suas limitações, objetivos e experiência prévia com exercícios. Se tiver dúvidas ou preocupações, consulte um profissional de educação física ou um médico antes de iniciar qualquer programa de treinamento."]
         },
     }
+
+    const [fator, setFator] = useState("");
+    const [userFator, setUserFator] = useState("default")
 
 
 
