@@ -1,5 +1,6 @@
 import { Buttons } from "../../Atomic/Buttons/Buttons";
 import { useEffect, useState } from "react";
+import jsPDF from 'jspdf';
 
 export function RequestExercises(){
 
@@ -111,6 +112,23 @@ export function RequestExercises(){
     
     let typeFator = userFactor;
 
+    function getPDFExercise() {
+
+        console.log("teste pdf")
+        // Crie um novo objeto jsPDF
+        const doc = new jsPDF();
+      
+        // Selecione o elemento que deseja exportar como PDF
+        const element = document.getElementById('elemento-pdf');
+      
+        doc.text(arrayPrintTreino,10,10)
+       
+
+        doc.save('treino.pdf');
+      }
+
+      let arrayPrintTreino = ["Dia 1",...exercise[typeFator].dia1,"Dia 2",...exercise[typeFator].dia2,"Dia 3",...exercise[typeFator].dia3,"Dia 4",...exercise[typeFator].dia4,"Dia 5",...exercise[typeFator].dia5,"Dia 6",...exercise[typeFator].dia6,"Aviso",...warning[1].aviso1]
+
     return(
         <div>
             <div className="flex flex-col items-center justify-center pt-[20px]" >
@@ -182,7 +200,7 @@ export function RequestExercises(){
                         </div>
 
                         <div>
-                            <Buttons name="Gerar PDF" func=""></Buttons>
+                            <Buttons name="Gerar PDF" func={getPDFExercise}></Buttons>
                         </div>
                     </div>
                 </div>
