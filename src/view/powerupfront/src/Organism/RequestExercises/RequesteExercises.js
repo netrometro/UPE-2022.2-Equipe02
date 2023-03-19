@@ -47,6 +47,21 @@ export function RequestExercises(){
             "parte6":[""],
             "dia6":["Descanso"]
         },
+
+        "5":{
+            "parte1":["Treino de peito"],
+            "dia1":["Supino reto com barra: 3-4 séries de 6-10 repetições - ","Supino inclinado com halteres: 3-4 séries de 8-12 repetições - ","Crucifixo inclinado com halteres: 3-4 séries de 8-12 repetições - ","Flyes com halteres: 3-4 séries de 8-12 repetições"],
+            "parte2":["Treino de costas"],
+            "dia2":["Puxada na barra: 3-4 séries de 6-10 repetições - ","Remada com halteres: 3-4 séries de 8-12 repetições - ","Pull-ups ou chin-ups: 3-4 séries de 6-10 repetições - ","Levantamento terra: 3-4 séries de 6-10 repetições"],
+            "parte3":["Treino de pernas"],
+            "dia3":["Agachamento com barra: 3-4 séries de 6-10 repetições - ","Leg press: 3-4 séries de 8-12 repetições - ","Cadeira flexora: 3-4 séries de 8-12 repetições - ","Panturrilha em pé: 3-4 séries de 12-15 repetições"],
+            "parte4":["Treino de ombros"],
+            "dia4":["Press militar com barra: 3-4 séries de 6-10 repetições - ","Elevação lateral com halteres: 3-4 séries de 8-12 repetições - ","Desenvolvimento frontal com halteres: 3-4 séries de 8-12 repetições - ","Elevação posterior com halteres: 3-4 séries de 8-12 repetições"],
+            "parte5":["Treino de braços e abdominais"],
+            "dia5":["Rosca bíceps com barra: 3-4 séries de 8-12 repetições - ","Tríceps pulley: 3-4 séries de 8-12 repetições - ","Martelo com halteres: 3-4 séries de 8-12 repetições - ","Abdominais: 3-4 séries de 12-15 repetições"],
+            "parte6":[""],
+            "dia6":["Descanso"]
+        },
     }
 
     return(
