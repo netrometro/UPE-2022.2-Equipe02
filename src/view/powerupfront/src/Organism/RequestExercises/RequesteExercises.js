@@ -62,6 +62,21 @@ export function RequestExercises(){
             "parte6":[""],
             "dia6":["Descanso"]
         },
+
+        "6":{
+            "parte1":["Treino de peito e tríceps"],
+            "dia1":["Supino reto com barra: 4 séries de 6-10 repetições - ","Supino inclinado com halteres: 3 séries de 8-12 repetições - ","Crucifixo inclinado com halteres: 3 séries de 8-12 repetições - ","Extensão de tríceps com halteres: 3 séries de 8-12 repetições - ","Fundos em barras paralelas: 3 séries de 10-15 repetições"],
+            "parte2":["Treino de costas e bíceps"],
+            "dia2":["Puxada na barra: 4 séries de 6-10 repetições - ","Remada curvada: 3 séries de 8-12 repetições - ","Remada sentado com halteres: 3 séries de 8-12 repetições - ","Rosca direta com barra: 3 séries de 8-12 repetições - ","Rosca martelo com halteres: 3 séries de 8-12 repetições"],
+            "parte3":["Treino de pernas"],
+            "dia3":["Agachamento com barra: 4 séries de 6-10 repetições - ","Leg press: 3 séries de 8-12 repetições - ","Cadeira extensora: 3 séries de 8-12 repetições - ","Cadeira flexora: 3 séries de 8-12 repetições - ","Panturrilha em pé: 3 séries de 12-15 repetições"],
+            "parte4":[" Treino de ombros"],
+            "dia4":["Press militar com barra: 4 séries de 6-10 repetições - ","Elevação lateral com halteres: 3 séries de 8-12 repetições - ","Desenvolvimento frontal com halteres: 3 séries de 8-12 repetições - ","Elevação posterior com halteres: 3 séries de 8-12 repetições - ","Encolhimento de ombros com halteres: 3 séries de 10-15 repetições"],
+            "parte5":["Treino de pernas e abdômen"],
+            "dia5":["Agachamento frontal: 4 séries de 6-10 repetições - ","Leg press inclinado: 3 séries de 8-12 repetições - ","Stiff: 3 séries de 8-12 repetições - ","Elevação de panturrilha sentado: 3 séries de 12-15 repetições - ","Abdominais: 4 séries de 10-15 repetições"],
+            "parte6":["Treino de braços e antebraços"],
+            "dia6":["Rosca bíceps com halteres: 3 séries de 8-12 repetições - ","Rosca scott: 3 séries de 8-12 repetições - ","Tríceps corda: 3 séries de 8-12 repetições - ","Tríceps francês com halteres: 3 séries de 8-12 repetições - ","Curl de antebraço com barra: 3 séries de 12-15 repetições - ", "Extensão de antebraço com halteres: 3 séries"]
+        },
     }
 
     return(
