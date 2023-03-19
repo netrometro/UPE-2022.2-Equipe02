@@ -26,6 +26,12 @@ export function RequestExercises(){
                         <div className="">
                             <p className="text-2xl font-bold text-[#8854d0]">Treino</p>  
                         </div>
+
+                        <div className=" shadow-inner p-[20px] m-[10px] duration-500 hover:shadow-2xl ">
+                            <p className="my-[10px] font-bold">Dia 1</p>
+                            <p className="my-[10px] font-bold"></p>
+                            <p></p>
+                        </div>
                     </div>
                 </div>
             </div>
