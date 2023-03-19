@@ -20,7 +20,13 @@ export function RequestExercises(){
                             </select>
 
                             <Buttons  type="submit" name="Solicitar" func="" />    
+                    </div>
+
+                    <div className=" w-[1300px] h-max p-[50px]  rounded-[12px] my-[30px] ">
+                        <div className="">
+                            <p className="text-2xl font-bold text-[#8854d0]">Treino</p>  
                         </div>
+                    </div>
                 </div>
             </div>
         </div>
