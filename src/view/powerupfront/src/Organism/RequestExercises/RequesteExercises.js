@@ -17,6 +17,21 @@ export function RequestExercises(){
             "parte6":[""],
             "dia6":[""]
         },
+
+        "3":{
+            "parte1":["Treino de corpo inteiro"],
+            "dia1":["Agachamento com barra: 3 séries de 8-12 repetições - ","Supino com halteres: 3 séries de 8-12 repetições - ","Puxada na barra: 3 séries de 8-12 repetições - ","Rosca bíceps com halteres: 3 séries de 8-12 repetições - ","Extensão de tríceps com halteres: 3 séries de 8-12 repetições - ","Prancha: 3 séries de 30-60 segundos"],
+            "parte2":["Treino de membros inferiores e abdominais"],
+            "dia2":["Levantamento terra com barra: 3 séries de 8-12 repetições - ","Lunges com halteres: 3 séries de 10-12 repetições em cada perna - ","Cadeira extensora: 3 séries de 8-12 repetições - ","Abdominais: 3 séries de 12-15 repetições"],
+            "parte3":["Treino de membros superiores e abdominais"],
+            "dia3":["Flexão de braço: 3 séries de 8-12 repetições - ","Remada com halteres: 3 séries de 8-12 repetições - ","Elevação lateral com halteres: 3 séries de 8-12 repetições - ","Rosca martelo com halteres: 3 séries de 8-12 repetições - ","Tríceps testa com halteres: 3 séries de 8-12 repetições - ","Prancha lateral: 3 séries de 30-60 segundos em cada lado"],
+            "parte4":[""],
+            "dia4":["Descanso"],
+            "parte5":[""],
+            "dia5":["Descanso"],
+            "parte6":[""],
+            "dia6":["Descanso"]
+        },
     }
 
     return(
