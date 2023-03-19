@@ -92,7 +92,21 @@ export function RequestExercises(){
     const handleFactorChange = (e) => setFactor(e.target.value);
 
     function onClickResquestExecise(){
-
+        if(factor === "3"){
+            setUserFactor("3")
+        }else if(factor === "4"){
+            setUserFactor("4") 
+        }
+        else if(factor === "5"){
+            setUserFactor("5")
+        }
+        else if(factor === "6"){
+            setUserFactor("6")
+        }else if(factor === null || factor === undefined){
+            alert("digite um valor para receber a dieta correta")
+        }else{
+            alert("digite um valor para receber a dieta correta")
+        }
     }
     
 
