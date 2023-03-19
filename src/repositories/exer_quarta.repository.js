@@ -1,58 +1,56 @@
 import { prisma } from "../services/prisma";
 
-export const create_exer_terca = async(data) =>{
-    const exer_terca = await prisma.exerTerca.create({
+export const create_exer_quarta = async(data) =>{
+    const exer_quarta = await prisma.exerQuarta.create({
         data
     })
-    return exer_terca
+    return exer_quarta
 }
 
 //listar todas as colunas
 
 export const getAll = async() =>{
-    const terca = await prisma.exerTerca.findMany({})
-    return terca
+    const quarta = await prisma.exerQuarta.findMany({})
+    return quarta
 }
 
 //listar pelo id
 
 export const getById = async(id) =>{
-    const terca = await prisma.exerTerca.findUnique({
+    const quarta = await prisma.exerQuarta.findUnique({
         where:{
             id
         }
     })
-    return terca
+    return quarta
 }
 
-
 export const getFromUser = async(id_conta) =>{
-    const terca = await prisma.exerTerca.findMany({
+    const quarta = await prisma.exerQuarta.findMany({
         where:{
             id_conta
         }
     })
-    return terca
+    return quarta
 }
 
 
 
-
 //atualizar tabela
-export const updateTerca = async(id, data) => {
-    const terca =  await prisma.exerTerca.update({
+export const updateQuarta = async(id, data) => {
+    const quarta =  await prisma.exerQuarta.update({
         where:{
             id
         },
         data
     })
-    return terca
+    return quarta
 }
 
 //deletar da tabela
 
-export const deleteTerca = async(id) => {
-    await prisma.exerTerca.delete({
+export const deleteQuarta = async(id) => {
+    await prisma.exerQuarta.delete({
         where:{
             id
         }
@@ -62,11 +60,10 @@ export const deleteTerca = async(id) => {
 
 //deletar tudo
 export const deleteTudo = async(id_conta) => {
-    await prisma.exerTerca.deleteMany({
+    await prisma.exerQuarta.deleteMany({
         where:{
             id_conta
         }
     })
     return deleteTudo
 }
-
