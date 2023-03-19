@@ -32,6 +32,21 @@ export function RequestExercises(){
             "parte6":[""],
             "dia6":["Descanso"]
         },
+
+        "4":{
+            "parte1":["Treino de peito e tríceps"],
+            "dia1":["Supino reto com barra: 3-4 séries de 8-12 repetições - ","Supino inclinado com halteres: 3-4 séries de 8-12 repetições - ","Crucifixo com halteres: 3-4 séries de 8-12 repetições - ","Extensão de tríceps com halteres: 3-4 séries de 8-12 repetições"],
+            "parte2":["Treino de costas e bíceps"],
+            "dia2":["Puxada na barra: 3-4 séries de 8-12 repetições - ","Remada com halteres: 3-4 séries de 8-12 repetições - ","Pull-ups ou chin-ups: 3-4 séries de 6-10 repetições - ","Rosca bíceps com halteres: 3-4 séries de 8-12 repetições"],
+            "parte3":["Treino de pernas"],
+            "dia3":["Agachamento com barra: 3-4 séries de 8-12 repetições - ","Cadeira extensora: 3-4 séries de 8-12 repetições - ","Cadeira flexora: 3-4 séries de 8-12 repetições - ","Panturrilha em pé: 3-4 séries de 12-15 repetições"],
+            "parte4":["Treino de ombros e abdominais"],
+            "dia4":["Press militar com barra: 3-4 séries de 8-12 repetições - ","Elevação lateral com halteres: 3-4 séries de 8-12 repetições - ","Desenvolvimento frontal com halteres: 3-4 séries de 8-12 repetições - ","Abdominais: 3-4 séries de 12-15 repetições"],
+            "parte5":[""],
+            "dia5":["Descanso"],
+            "parte6":[""],
+            "dia6":["Descanso"]
+        },
     }
 
     return(
