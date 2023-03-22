@@ -6,7 +6,7 @@
   "author": "David Rocha <manoeudavi3@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "nodemon ./src/index.js"
+    "start": "nodemon ./index.js"
   },
   "dependencies": {
     "@prisma/client": "^4.11.0",
