@@ -200,6 +200,11 @@ export function VerifyExercise(){
         }
     }
 
+    const listaExercicios = part[res].exercicios.map((exercicio, index) => (
+        <div className="shadow-inner p-[20px] m-[10px] duration-500 hover:shadow-2xl " key={index}>{exercicio}</div>
+    ));
+
+
     return(
         <div className="flex flex-col items-center justify-center pt-[20px]">
             <div>
@@ -222,6 +227,14 @@ export function VerifyExercise(){
                 </select>
 
                 <Buttons name="Listar" func={onListarExer}/>
+             </div>
+
+             <div className=" w-[1300px] h-max p-[50px]  rounded-[12px] my-[30px] ">
+                <p>{part[res].tipo}</p>
+                <p>
+                    {listaExercicios}
+                </p>
+                <p>{part[res].img}</p>
              </div>
         </div>
     )
