@@ -6,7 +6,11 @@ import { useState } from "react";
 export function VerifyExercise(){
 
     const part = {
-
+        "0":{
+            "tipo":[""],
+            "exercicios":[""],
+            "img":[""],
+        },
     };
 
     const [exer, setExer] = useState("");
