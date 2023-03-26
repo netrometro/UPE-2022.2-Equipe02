@@ -1,10 +1,10 @@
-const {getUser} =  require("../repositories/autenticacao.repository")
-const bcrypt = require("bcrypt")
-const jwt = require("jsonwebtoken")
-const {autenticacaoValidation} = require("../validations/autenticacao")
+import getUser from "../repositories/autenticacao.repository.js"
+import bcrypt from "bcrypt"
+import jwt from "jsonwebtoken"
+import autenticacaoValidation from "../validations/autenticacao.js"
 
 
-exports.login = async (req, res) => {
+const login = async (req, res) => {
     try {
         const data = await autenticacaoValidation.parse(req.body)
         const usuario = await getUser(data.email)
@@ -33,3 +33,4 @@ exports.login = async (req, res) => {
         console.log(error)
     }
 }
+export default login

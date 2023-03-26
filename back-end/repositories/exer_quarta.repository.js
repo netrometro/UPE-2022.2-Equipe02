@@ -1,4 +1,4 @@
-import { prisma } from "../services/prisma";
+import { prisma } from "../services/prisma.js";
 
 export const create_exer_quarta = async(data) =>{
     const exer_quarta = await prisma.exerQuarta.create({

@@ -1,4 +1,4 @@
-import{create_lanche_manha, getAll, getById,updateLanche, deleteLanche, deleteTudo, getFromUser} from '../repositories/lancheManha.repository'
+import{create_lanche_manha, getAll,updateLanche, deleteLanche, deleteTudo, getFromUser} from '../repositories/lancheManha.repository.js'
 
 export const create = async(req,res)=>{
     try {

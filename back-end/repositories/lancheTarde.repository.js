@@ -1,4 +1,4 @@
-import { prisma } from "../services/prisma";
+import { prisma } from "../services/prisma.js";
 
 export const create_lanche_tarde = async(data) =>{
     const lanche_tarde = await prisma.lanche_tarde.create({

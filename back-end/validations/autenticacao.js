@@ -1,8 +1,9 @@
-const {z} = require("zod")
+import z  from "zod"
 
-exports.autenticacaoValidation = z.object({
+const autenticacaoValidation = z.object({
     email: z.string().email(),
     senha: z.string(),
 })
 
+export default autenticacaoValidation
 //verificar login

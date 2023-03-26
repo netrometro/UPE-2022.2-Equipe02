@@ -1,4 +1,4 @@
-import { create_exer_terca, getAll, getById,updateTerca, deleteTerca, getFromUser, deleteTudo } from "../repositories/exer_terca.repository"
+import { create_exer_terca, getAll, getById,updateTerca, deleteTerca, getFromUser, deleteTudo } from "../repositories/exer_terca.repository.js"
 
 export const create = async(req,res)=>{
     try {

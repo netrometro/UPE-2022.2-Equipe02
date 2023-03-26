@@ -1,4 +1,4 @@
-import { create_exer_domingo, getAll, getById,updateDomingo, deleteDomingo, getFromUser, deleteTudo } from "../repositories/exer_domingo.repository"
+import { create_exer_domingo, getAll, getById,updateDomingo, deleteDomingo, getFromUser, deleteTudo } from "../repositories/exer_domingo.repository.js"
 
 export const create = async(req,res)=>{
     try {

@@ -1,5 +1,5 @@
-import {create,get,getId, update, remove} from '../controller/perfil.controller'
-const {veryToken} = require("../middlewares/autenticacao")
+import {create,get,getId, update, remove} from '../controller/perfil.controller.js'
+import veryToken from "../middlewares/autenticacao.js"
 const rotas_perfil = app =>{
     //criar
     app.post("/perfil",veryToken, create)

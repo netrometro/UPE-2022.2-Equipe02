@@ -1,4 +1,4 @@
-import{create_lanche_tarde, getAll, getById,updateLanche, deleteLanche, deleteTudo, getFromUser} from '../repositories/lancheTarde.repository'
+import{create_lanche_tarde, getAll,updateLanche, deleteLanche, deleteTudo, getFromUser} from '../repositories/lancheTarde.repository.js'
 
 export const create = async(req,res)=>{
     try {

@@ -1,4 +1,4 @@
-import { prisma } from "../services/prisma";
+import { prisma } from "../services/prisma.js";
 
 export const create_cafe = async(data) =>{
     const cafe = await prisma.cafe.create({

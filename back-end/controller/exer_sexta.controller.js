@@ -1,4 +1,4 @@
-import { create_exer_sexta, getAll, getById,updateSexta, deleteSexta, getFromUser,deleteTudo } from "../repositories/exer_sexta.repository"
+import { create_exer_sexta, getAll, getById,updateSexta, deleteSexta, getFromUser,deleteTudo } from "../repositories/exer_sexta.repository.js"
 
 export const create = async(req,res)=>{
     try {

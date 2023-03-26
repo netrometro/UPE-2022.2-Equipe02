@@ -1,4 +1,4 @@
-import { prisma } from "../services/prisma";
+import { prisma } from "../services/Prisma.js";
 
 export const create_lanche_manha = async(data) =>{
     const lanche_manha = await prisma.lanche_manha.create({

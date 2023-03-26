@@ -1,8 +1,8 @@
-const { response } = require("express")
-const jwt = require ("jsonwebtoken")
+import response from "express"
+import jwt from "jsonwebtoken"
 
 
-exports.veryToken = async(req, res, next) => {
+const veryToken = async(req, res, next) => {
     const token = req.headers.authorization
 
     if(!token){
@@ -32,3 +32,4 @@ exports.veryToken = async(req, res, next) => {
         
     }
 }
+export default veryToken
