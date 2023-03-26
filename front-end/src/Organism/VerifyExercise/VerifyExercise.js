@@ -53,6 +53,20 @@ export function VerifyExercise(){
                             "Pull-ups com pegada larga - 300 a 450 calorias/hora - "],
             "img":[""],
         },
+        "4":{
+            "tipo":["Biceps"],
+            "exercicios":[  "Rosca direta com barra - 200 a 400 calorias/hora - ",
+                            "Rosca concentrada com halteres - 150 a 250 calorias/hora - ",
+                            "Rosca alternada com halteres - 200 a 350 calorias/hora - ",
+                            "Rosca martelo com halteres - 200 a 350 calorias/hora - ",
+                            "Rosca inversa com barra - 150 a 250 calorias/hora - ",
+                            "Rosca scott com barra - 200 a 350 calorias/hora - ",
+                            "Rosca scott com halteres - 200 a 350 calorias/hora - ",
+                            "Rosca 21 - 200 a 300 calorias/hora - ",
+                            "Rosca spider com halteres - 200 a 350 calorias/hora - ",
+                            "Rosca direta com cabo - 150 a 250 calorias/hora - "],
+            "img":[""],
+        },
     };
 
     const [exer, setExer] = useState("");
