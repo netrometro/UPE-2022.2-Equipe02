@@ -22,7 +22,15 @@ export function Home(){
                     <p className="text-[20px] ">Uma aplicação feita para os amantes da musculação</p>
                 </div>
                 <div className="flex flex-col items-center">
-                    
+                    <div className="my-[30px]">
+                        <p className="text-[20px] text-[#8854d0]">Aplicações disponíveis</p>
+                    </div>
+                    <div className="grid grid-cols-12 gap-10 my-[30px] ">
+                        <div className="col-span-4 flex flex-col items-center w-[300px] h-[230px] p-[50px] shadow-xl hover:shadow-2xl rounded-[12px]">
+                            <p className="text-[20px] text-[#8854d0]">Treino</p>
+                            <p className="py-[10px]">Há a possibilidade de você criar o seu própio treino e também requisitar um de acordo com suas necessidades.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <Footers/>
