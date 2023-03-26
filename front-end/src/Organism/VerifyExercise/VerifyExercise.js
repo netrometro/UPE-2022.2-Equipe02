@@ -123,6 +123,20 @@ export function VerifyExercise(){
                             "Cadeira Extensora - 200 a 350 calorias/hora -"],
             "img":[""],
         },
+        "9":{
+            "tipo":["Abs"],
+            "exercicios":[  "Abdominal tradicional - 100 a 200 calorias/hora - ",
+                            "Prancha - 150 a 250 calorias/hora - ",
+                            "Abdominal oblíquo - 150 a 250 calorias/hora - ",
+                            "Abdominal com bola suíça - 100 a 200 calorias/hora - ",
+                            "Bicicleta no ar - 200 a 350 calorias/hora - ",
+                            "Abdominal com elevação de pernas - 150 a 250 calorias/hora - ",
+                            "Tesoura - 150 a 250 calorias/hora - ",
+                            "Abdominal com rotação de tronco - 150 a 250 calorias/hora - ",
+                            "Abdominal com apoio dos pés na parede - 150 a 250 calorias/hora - ",
+                            "Abdominal com bola medicinal - 200 a 300 calorias/hora - "],
+            "img":[""],
+        },
     };
 
     const [exer, setExer] = useState("");
