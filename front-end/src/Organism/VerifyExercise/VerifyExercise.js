@@ -39,6 +39,20 @@ export function VerifyExercise(){
                             "Remada alta com halteres - 200 a 350 calorias/hora - "],
             "img":[""],
         },
+        "3":{
+            "tipo":["Costa"],
+            "exercicios":[  "Barra fixa - 400 a 600 calorias/hora - ",
+                            "Remada curvada com barra - 300 a 450 calorias/hora - ",
+                            "Remada unilateral com halteres - 200 a 350 calorias/hora - ",
+                            "Puxada alta na polia - 250 a 400 calorias/hora - ",
+                            "Remada sentada na máquina - 200 a 350 calorias/hora - ",
+                            "Puxada na polia com triangulo - 200 a 350 calorias/hora - ",
+                            "Remada na máquina com triangulo - 200 a 350 calorias/hora - ",
+                            "Levantamento terra - 400 a 600 calorias/hora - ",
+                            "Remada baixa com barra - 200 a 350 calorias/hora - ",
+                            "Pull-ups com pegada larga - 300 a 450 calorias/hora - "],
+            "img":[""],
+        },
     };
 
     const [exer, setExer] = useState("");
