@@ -151,6 +151,20 @@ export function VerifyExercise(){
                             "Box jump - 600 a 800 calorias/hora"],
             "img":[""],
         },
+        "11":{
+            "tipo":["Antebraço"],
+            "exercicios":[  "Puxada de corda com antebraço - 250 a 400 calorias/hora",
+                            "Puxada de corda com barra - 200 a 350 calorias/hora",
+                            "Puxada de corda com halteres - 200 a 350 calorias/hora",
+                            "Elevação de punho com barra - 150 a 250 calorias/hora",
+                            "Elevação de punho com halteres - 150 a 250 calorias/hora",
+                            "Martelo com barra - 200 a 350 calorias/hora",
+                            "Martelo com halteres - 200 a 350 calorias/hora",
+                            "Rosca inversa com barra - 150 a 250 calorias/hora",
+                            "Rosca inversa com halteres - 150 a 250 calorias/hora",
+                            "Rosca de punho com barra - 150 a 250 calorias/hora"],
+            "img":[""],
+        },
     };
 
     const [exer, setExer] = useState("");
