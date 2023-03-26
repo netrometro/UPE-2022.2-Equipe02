@@ -67,6 +67,20 @@ export function VerifyExercise(){
                             "Rosca direta com cabo - 150 a 250 calorias/hora - "],
             "img":[""],
         },
+        "5":{
+            "tipo":["Triceps"],
+            "exercicios":[  "Supino fechado - 200 a 350 calorias/hora",
+                            "Extensão de tríceps com halteres - 150 a 250 calorias/hora",
+                            "Extensão de tríceps na polia - 150 a 250 calorias/hora",
+                            "Mergulho no banco - 250 a 400 calorias/hora",
+                            "Tríceps testa com barra - 200 a 350 calorias/hora",
+                            "Tríceps testa com halteres - 200 a 350 calorias/hora",
+                            "Extensão de tríceps com cabo - 150 a 250 calorias/hora",
+                            "Extensão de tríceps com barra - 200 a 350 calorias/hora",
+                            "Extensão de tríceps unilateral com halteres - 150 a 250 calorias/hora",
+                            "Kickback de tríceps com halteres - 150 a 250 calorias/hora"],
+            "img":[""],
+        },
     };
 
     const [exer, setExer] = useState("");
