@@ -8,6 +8,36 @@ export function VerifyExercise(){
     const [exer, setExer] = useState("");
     const [res, setRest] = useState("0");
 
+    const handleExerChange = (e) => setExer(e.target.value);
+
+    function onListarExer(){
+        if(exer === "1"){
+            setRest("1")
+        }else if(exer === "2"){
+            setRest("2")
+        }else if(exer === "3"){
+            setRest("3")
+        }else if(exer === "4"){
+            setRest("4")
+        }else if(exer === "5"){
+            setRest("5")
+        }else if(exer === "6"){
+            setRest("6")
+        }else if(exer === "7"){
+            setRest("7")
+        }else if(exer === "8"){
+            setRest("8")
+        }else if(exer === "9"){
+            setRest("9")
+        }else if(exer === "10"){
+            setRest("10")
+        }else if(exer === "11"){
+            setRest("11")
+        }else{
+            alert("selecione um tipo para visualizar")
+        }
+    }
+
     return(
         <div className="flex flex-col items-center justify-center pt-[20px]">
             <div>
