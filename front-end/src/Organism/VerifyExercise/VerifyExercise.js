@@ -1,5 +1,6 @@
 import { Buttons } from '../../Atomic/Buttons/Buttons.js';
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 
 
@@ -9,7 +10,7 @@ export function VerifyExercise(){
         "0":{
             "tipo":[""],
             "exercicios":[""],
-            "img":[""],
+            "link":[""],
         },
         "1":{
             "tipo":["Peito"],
@@ -23,7 +24,16 @@ export function VerifyExercise(){
                             "Press com máquina de cabo - 200 a 300 calorias/hora ",
                             "Press inclinado com barra - 300 a 450 calorias/hora ",
                             "Flexão de braço com um braço - 250 a 350 calorias/hora"],
-            "img":[""],
+            "link":["https://www.youtube.com/watch?v=IODxDxX7oi4",
+                    "https://www.youtube.com/watch?v=_JqzO3A5wcM",
+                    "https://www.youtube.com/watch?v=2IMGwtn0YbY",
+                    "https://www.youtube.com/watch?v=CArcfAJOJbM",
+                    "https://www.youtube.com/watch?v=hMDf6s-4vx8",
+                    "https://www.youtube.com/watch?v=yASNGOl7qrg",
+                    "https://www.youtube.com/watch?v=U1B6CzpS7X4",
+                    "https://www.youtube.com/watch?v=4V4iRiLr5w0",
+                    "https://www.youtube.com/watch?v=tg0q3qz3Gso",
+                    "https://www.youtube.com/watch?v=YbXkt8lDfLo"],
         },
         "2":{
             "tipo":["Ombro"],
@@ -37,7 +47,7 @@ export function VerifyExercise(){
                             "Elevação de ombros com halteres - 150 a 250 calorias/hora - ",
                             "Desenvolvimento com barra - 250 a 400 calorias/hora - ",
                             "Remada alta com halteres - 200 a 350 calorias/hora - "],
-            "img":[""],
+            "link":[""],
         },
         "3":{
             "tipo":["Costa"],
@@ -51,7 +61,7 @@ export function VerifyExercise(){
                             "Levantamento terra - 400 a 600 calorias/hora - ",
                             "Remada baixa com barra - 200 a 350 calorias/hora - ",
                             "Pull-ups com pegada larga - 300 a 450 calorias/hora - "],
-            "img":[""],
+            "link":[""],
         },
         "4":{
             "tipo":["Biceps"],
@@ -65,7 +75,7 @@ export function VerifyExercise(){
                             "Rosca 21 - 200 a 300 calorias/hora - ",
                             "Rosca spider com halteres - 200 a 350 calorias/hora - ",
                             "Rosca direta com cabo - 150 a 250 calorias/hora - "],
-            "img":[""],
+            "link":[""],
         },
         "5":{
             "tipo":["Triceps"],
@@ -79,7 +89,7 @@ export function VerifyExercise(){
                             "Extensão de tríceps com barra - 200 a 350 calorias/hora",
                             "Extensão de tríceps unilateral com halteres - 150 a 250 calorias/hora",
                             "Kickback de tríceps com halteres - 150 a 250 calorias/hora"],
-            "img":[""],
+            "link":[""],
         },
         "6":{
             "tipo":["Quadriceps"],
@@ -93,7 +103,7 @@ export function VerifyExercise(){
                             "Passada - 300 a 450 calorias/hora",
                             "Pistol squat - 250 a 400 calorias/hora",
                             "Agachamento búlgaro - 300 a 450 calorias/hora"],
-            "img":[""],
+            "link":[""],
         },
         "7":{
             "tipo":["Posterior"],
@@ -107,7 +117,7 @@ export function VerifyExercise(){
                             "Swiss ball hamstring curl - 200 a 300 calorias/hora",
                             "Afundo reverso - 300 a 450 calorias/hora",
                             "Good morning - 250 a 400 calorias/hora"],
-            "img":[""],
+            "link":[""],
         },
         "8":{
             "tipo":["Glúteos"],
@@ -121,7 +131,7 @@ export function VerifyExercise(){
                             "Glúteo 4 Apoios - 150 a 250 calorias/hora -",
                             "Agachamento Búlgaro - 350 a 600 calorias/hora -",
                             "Cadeira Extensora - 200 a 350 calorias/hora -"],
-            "img":[""],
+            "link":[""],
         },
         "9":{
             "tipo":["Abs"],
@@ -135,7 +145,7 @@ export function VerifyExercise(){
                             "Abdominal com rotação de tronco - 150 a 250 calorias/hora - ",
                             "Abdominal com apoio dos pés na parede - 150 a 250 calorias/hora - ",
                             "Abdominal com bola medicinal - 200 a 300 calorias/hora - "],
-            "img":[""],
+            "link":[""],
         },
         "10":{
             "tipo":["Panturilha"],
@@ -149,7 +159,7 @@ export function VerifyExercise(){
                             "Agachamento com salto - 400 a 600 calorias/hora",
                             "Jump - 500 a 800 calorias/hora",
                             "Box jump - 600 a 800 calorias/hora"],
-            "img":[""],
+            "link":[""],
         },
         "11":{
             "tipo":["Antebraço"],
@@ -163,7 +173,7 @@ export function VerifyExercise(){
                             "Rosca inversa com barra - 150 a 250 calorias/hora",
                             "Rosca inversa com halteres - 150 a 250 calorias/hora",
                             "Rosca de punho com barra - 150 a 250 calorias/hora"],
-            "img":[""],
+            "link":[""],
         },
     };
 
@@ -201,7 +211,11 @@ export function VerifyExercise(){
     }
 
     const listaExercicios = part[res].exercicios.map((exercicio, index) => (
-        <div className="shadow-inner p-[20px] m-[10px] duration-500 hover:shadow-2xl " key={index}>{exercicio}</div>
+        <div className="shadow-inner p-[20px] m-[10px] duration-500 hover:shadow-2xl " key={index}>
+            <Link to={part[res].link[index]}>
+                {exercicio}
+            </Link>  
+        </div>
     ));
 
 
