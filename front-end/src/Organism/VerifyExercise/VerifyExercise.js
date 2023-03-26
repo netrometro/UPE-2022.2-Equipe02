@@ -137,6 +137,20 @@ export function VerifyExercise(){
                             "Abdominal com bola medicinal - 200 a 300 calorias/hora - "],
             "img":[""],
         },
+        "10":{
+            "tipo":["Panturilha"],
+            "exercicios":[  "Elevação de panturrilha em pé - 200 a 300 calorias/hora",
+                            "Elevação de panturrilha sentado - 200 a 300 calorias/hora",
+                            "Elevação de panturrilha em máquina - 150 a 250 calorias/hora",
+                            "Pulo de corda - 700 a 1000 calorias/hora",
+                            "Corrida - 600 a 1000 calorias/hora",
+                            "Caminhada com inclinação - 300 a 500 calorias/hora",
+                            "Subida de escada - 500 a 700 calorias/hora",
+                            "Agachamento com salto - 400 a 600 calorias/hora",
+                            "Jump - 500 a 800 calorias/hora",
+                            "Box jump - 600 a 800 calorias/hora"],
+            "img":[""],
+        },
     };
 
     const [exer, setExer] = useState("");
