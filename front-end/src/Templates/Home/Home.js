@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { Buttons } from '../../Atomic/Buttons/Buttons.js';
 import { Headers } from "../../Organism/Headers/Headers.js";
 import { Footers } from "../../Organism/Footer/Footer.js";
+import { VerifyExercise } from "../../Organism/VerifyExercise/VerifyExercise.js";
 
 
 
@@ -41,6 +42,7 @@ export function Home(){
                     </div>
                 </div>
             </div>
+            <VerifyExercise/>
             <Footers/>
            
         </div>
