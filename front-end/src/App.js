@@ -8,6 +8,7 @@ import { Diet } from "./Templates/Diet/Diet";
 import { GetDiet } from "./Organism/getDiet/getDiet";
 import{Exercises} from "./Templates/Exercises/Exercises"
 import{GetExercises} from "./Organism/getExercises/GetExercises"
+import{Imc} from "./Templates/Imc/imc"
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route exact path='/getDiet' element={<GetDiet/>}></Route>
           <Route exact path='/exercise' element={<Exercises/>}></Route>
           <Route exact path='/getExercises' element={<GetExercises/>}></Route>
+          <Route exact path='/imc' element={<Imc/>}></Route>
           </Routes>
         
         
