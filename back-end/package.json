@@ -5,8 +5,9 @@
   "repository": "https://github.com/netrometro/UPE-2022.2-Equipe02.git",
   "author": "David Rocha <manoeudavi3@gmail.com>",
   "license": "MIT",
+  "type": "module",
   "scripts": {
-    "start": "nodemon ./index.js"
+    "dev": "nodemon ./index.js"
   },
   "dependencies": {
     "@prisma/client": "^4.11.0",
