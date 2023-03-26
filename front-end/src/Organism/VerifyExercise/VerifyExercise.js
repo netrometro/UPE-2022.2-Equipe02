@@ -44,7 +44,7 @@ export function VerifyExercise(){
                 <p className="text-2xl font-bold text-[#8854d0]">Verificar exercícios</p>
              </div>
              <div className=" w-max h-max p-[50px] shadow-2xl rounded-[12px] my-[30px] " >
-                <select name="" id=""  onChange="" className="mx-[10px]">
+                <select name="" id=""  onChange={handleExerChange} className="mx-[10px]">
                     <option value="1">Selecione uma parte</option>
                     <option value="1">Peito</option>
                     <option value="2">Ombro</option>
@@ -59,7 +59,7 @@ export function VerifyExercise(){
                     <option value="11">Antebraço</option>
                 </select>
 
-                <Buttons name="Listar" func=""/>
+                <Buttons name="Listar" func={onListarExer}/>
              </div>
         </div>
     )
