@@ -5,6 +5,10 @@ import { useState } from "react";
 
 export function VerifyExercise(){
 
+    const part = {
+
+    };
+
     const [exer, setExer] = useState("");
     const [res, setRest] = useState("0");
 
