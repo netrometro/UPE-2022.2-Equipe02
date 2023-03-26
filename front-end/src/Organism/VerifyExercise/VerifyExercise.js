@@ -11,6 +11,20 @@ export function VerifyExercise(){
             "exercicios":[""],
             "img":[""],
         },
+        "1":{
+            "tipo":["Peito"],
+            "exercicios":[  "Flexão de braço - 350 a 500 calorias/hora ",
+                            "Supino com barra - 280 a 450 calorias/hora ",
+                            "Supino com halteres - 200 a 400 calorias/hora ",
+                            "Crucifixo com halteres - 250 a 350 calorias/hora ",
+                            "Mergulho no banco - 250 a 350 calorias/hora ",
+                            "Fly com halteres - 200 a 300 calorias/hora ",
+                            "Flexão de braço com pegada fechada - 350 a 450 calorias/hora ",
+                            "Press com máquina de cabo - 200 a 300 calorias/hora ",
+                            "Press inclinado com barra - 300 a 450 calorias/hora ",
+                            "Flexão de braço com um braço - 250 a 350 calorias/hora"],
+            "img":[""],
+        },
     };
 
     const [exer, setExer] = useState("");
