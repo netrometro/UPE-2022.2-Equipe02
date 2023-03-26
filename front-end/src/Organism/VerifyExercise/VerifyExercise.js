@@ -81,6 +81,20 @@ export function VerifyExercise(){
                             "Kickback de tríceps com halteres - 150 a 250 calorias/hora"],
             "img":[""],
         },
+        "6":{
+            "tipo":["Quadriceps"],
+            "exercicios":[  "Agachamento com barra - 400 a 600 calorias/hora",
+                            "Agachamento livre - 350 a 500 calorias/hora",
+                            "Leg Press - 250 a 450 calorias/hora",
+                            "Agachamento sumô - 350 a 500 calorias/hora",
+                            "Cadeira extensora - 150 a 250 calorias/hora",
+                            "Afundo - 300 a 450 calorias/hora",
+                            "Agachamento com salto - 500 a 700 calorias/hora",
+                            "Passada - 300 a 450 calorias/hora",
+                            "Pistol squat - 250 a 400 calorias/hora",
+                            "Agachamento búlgaro - 300 a 450 calorias/hora"],
+            "img":[""],
+        },
     };
 
     const [exer, setExer] = useState("");
