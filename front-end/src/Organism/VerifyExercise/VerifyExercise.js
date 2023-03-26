@@ -109,6 +109,20 @@ export function VerifyExercise(){
                             "Good morning - 250 a 400 calorias/hora"],
             "img":[""],
         },
+        "8":{
+            "tipo":["Glúteos"],
+            "exercicios":[  "Agachamento - 350 a 600 calorias/hora -",
+                            "Levantamento Terra - 300 a 500 calorias/hora -",
+                            "Cadeira Abdutora - 250 a 400 calorias/hora -",
+                            "Cadeira Adutora - 200 a 350 calorias/hora -",
+                            "Passada - 350 a 550 calorias/hora -",
+                            "Stiff - 250 a 450 calorias/hora -",
+                            "Elevação de Pelve - 200 a 350 calorias/hora -",
+                            "Glúteo 4 Apoios - 150 a 250 calorias/hora -",
+                            "Agachamento Búlgaro - 350 a 600 calorias/hora -",
+                            "Cadeira Extensora - 200 a 350 calorias/hora -"],
+            "img":[""],
+        },
     };
 
     const [exer, setExer] = useState("");
