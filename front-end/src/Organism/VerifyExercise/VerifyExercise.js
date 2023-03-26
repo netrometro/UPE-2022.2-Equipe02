@@ -1,6 +1,13 @@
 import { Buttons } from '../../Atomic/Buttons/Buttons.js';
+import { useState } from "react";
+
+
 
 export function VerifyExercise(){
+
+    const [exer, setExer] = useState("");
+    const [res, setRest] = useState("0");
+
     return(
         <div className="flex flex-col items-center justify-center pt-[20px]">
             <div>
