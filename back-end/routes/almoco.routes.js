@@ -1,4 +1,4 @@
-import {create, remove, deleteAll, getByUser} from '../controller/almoco.controller'
+import {create, remove, deleteAll, getByUser} from '../controller/almoco.controller.js'
 
 const rotas_almoco = app =>{
     //inserir informação

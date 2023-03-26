@@ -1,4 +1,4 @@
-import { prisma } from "../services/prisma";
+import { prisma } from "../services/prisma.js";
 
 export const create_almoco = async(data) =>{
     const almoco = await prisma.almoco.create({

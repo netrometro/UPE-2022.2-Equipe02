@@ -1,4 +1,4 @@
-import {create, remove, deleteAll, getByUser} from '../controller/cafe.controller'
+import {create, remove, deleteAll, getByUser} from '../controller/cafe.controller.js'
 
 const rotas_cafe = app =>{
 

@@ -1,4 +1,4 @@
-import { create_exer_quinta, getAll, getById,updateQuinta, deleteQuinta, getFromUser, deleteTudo } from "../repositories/exer_quinta.repository"
+import { create_exer_quinta, getAll, getById,updateQuinta, deleteQuinta, getFromUser, deleteTudo } from "../repositories/exer_quinta.repository.js"
 
 export const create = async(req,res)=>{
     try {

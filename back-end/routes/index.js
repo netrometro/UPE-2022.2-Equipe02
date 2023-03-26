@@ -1,20 +1,19 @@
-import rotas_perfil from "./perfil.routes";
-import rotas_conta from "./conta.routes";
-import { autenticacaoRoutes } from "./autenticacao.routes";
-import rotas_jantar from "./jantar.routes";
-import rotas_cafe from "./cafe.routes";
-import rotas_lache_manha from "./lanche_manha.routes";
-import rotas_almoco from "./almoco.routes";
-import rotas_lanche_tarde from "./lanche_tarde.routes";
-import rotas_exer_segunda from "./exer_segunda.routes";
-import rotas_exer_terca from "./exer_terca.routes";
-import rotas_exer_quarta from "./exer_quarta.routes";
-import rotas_exer_quinta from "./exer_quinta.routes";
-import rotas_exer_sexta from "./exer_sexta.routes";
-import rotas_exer_sabado from "./exer_sabado.routes";
-import rotas_exer_domingo from "./exer_domingo.routes";
-import rotas_perfil from "./perfil.routes";
-import rotas_conta from "./conta.routes";
+
+import autenticacaoRoutes from "./autenticacao.routes.js";
+import rotas_jantar from "./jantar.routes.js";
+import rotas_cafe from "./cafe.routes.js";
+import rotas_lache_manha from "./lanche_manha.routes.js";
+import rotas_almoco from "./almoco.routes.js";
+import rotas_lanche_tarde from "./lanche_tarde.routes.js";
+import rotas_exer_segunda from "./exer_segunda.routes.js";
+import rotas_exer_terca from "./exer_terca.routes.js";
+import rotas_exer_quarta from "./exer_quarta.routes.js";
+import rotas_exer_quinta from "./exer_quinta.routes.js";
+import rotas_exer_sexta from "./exer_sexta.routes.js";
+import rotas_exer_sabado from "./exer_sabado.routes.js";
+import rotas_exer_domingo from "./exer_domingo.routes.js";
+import rotas_perfil from "./perfil.routes.js";
+import rotas_conta from "./conta.routes.js";
 
 const rotas = app =>{
     rotas_perfil(app)

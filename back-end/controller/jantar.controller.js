@@ -1,4 +1,4 @@
-import{create_jantar, getAll, getById,updateJantar, deleteJantar, deleteTudo, getFromUser} from '../repositories/jantar.repository'
+import{create_jantar, getAll,updateJantar, deleteJantar, deleteTudo, getFromUser} from '../repositories/jantar.repository.js'
 
 export const create = async(req,res)=>{
     try {

@@ -1,6 +1,7 @@
-import { prisma } from "../services/prisma";
+import { getRounds } from "bcrypt";
+import { prisma } from "../services/prisma.js";
 
-exports.getUser = async (email) => {
+const getUser = async (email) => {
     const usuario = await prisma.conta.findUnique({
         where:{
             email,
@@ -8,3 +9,4 @@ exports.getUser = async (email) => {
     })
     return usuario
 }
+export default getUser

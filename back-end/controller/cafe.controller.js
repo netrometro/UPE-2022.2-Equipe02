@@ -1,4 +1,4 @@
-import{create_cafe, getAll, getById,updateCafe, deleteCafe, deleteTudo, getFromUser} from '../repositories/cafe.repository'
+import{create_cafe, getAll,updateCafe, deleteCafe, deleteTudo, getFromUser} from '../repositories/cafe.repository.js'
 
 export const create = async(req,res)=>{
     try {

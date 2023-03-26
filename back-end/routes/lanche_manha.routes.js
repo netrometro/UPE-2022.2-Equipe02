@@ -1,4 +1,4 @@
-import {create, remove, deleteAll, getByUser} from '../controller/lanche_manha.controller'
+import {create, remove, deleteAll, getByUser} from '../controller/lanche_manha.controller.js'
 
 const rotas_lache_manha = app =>{
     //inserir informação

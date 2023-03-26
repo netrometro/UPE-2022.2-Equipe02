@@ -1,4 +1,4 @@
-import{create_perfil, getAll, getById,updatePerfil, deletePerfil} from '../repositories/perfil.repository'
+import{create_perfil, getAll, getById,updatePerfil, deletePerfil} from '../repositories/perfil.repository.js'
 //
 
 export const create = async(req,res)=>{

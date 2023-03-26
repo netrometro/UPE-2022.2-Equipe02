@@ -1,4 +1,4 @@
-import { create_exer_quarta, getAll, getById,updateQuarta, deleteQuarta, getFromUser, deleteTudo } from "../repositories/exer_quarta.repository"
+import { create_exer_quarta, getAll, getById,updateQuarta, deleteQuarta, getFromUser, deleteTudo } from "../repositories/exer_quarta.repository.js"
 
 export const create = async(req,res)=>{
     try {

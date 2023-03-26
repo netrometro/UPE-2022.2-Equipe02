@@ -1,4 +1,4 @@
-import { prisma } from "../services/prisma";
+import { prisma } from "../services/prisma.js";
 
 export const create_jantar = async(data) =>{
     const jantar = await prisma.jantar.create({

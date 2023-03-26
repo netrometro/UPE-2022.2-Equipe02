@@ -1,4 +1,4 @@
-import{create_almoco,getAll, getById,updateAlmoco, deleteAlmoco, deleteTudo, getFromUser} from '../repositories/almoco.repository'
+import{create_almoco,getAll,updateAlmoco, deleteAlmoco, deleteTudo, getFromUser} from '../repositories/almoco.repository.js'
 
 export const create = async(req,res)=>{
     try {

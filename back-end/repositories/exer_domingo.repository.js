@@ -1,4 +1,4 @@
-import { prisma } from "../services/prisma";
+import { prisma } from "../services/prisma.js";
 
 export const create_exer_domingo = async(data) =>{
     const exer_domingo = await prisma.exerDomingo.create({

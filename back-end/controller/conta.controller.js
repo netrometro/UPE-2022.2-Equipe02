@@ -1,6 +1,6 @@
 import bcrypt from "bcrypt"
-import{create_conta, getAll, getById,updateConta, deleteConta} from '../repositories/conta.repository'
-const jwt = require ("jsonwebtoken")
+import{create_conta, getAll, getById,updateConta, deleteConta} from '../repositories/conta.repository.js'
+import jwt from "jsonwebtoken"
 
 
 export const create = async(req,res)=>{

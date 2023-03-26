@@ -1,4 +1,4 @@
-import{create_exer_segunda, getAll, getById,updateSegunda, deleteSegunda, getFromUser, deleteTudo} from '../repositories/exer_segunda.repository'
+import{create_exer_segunda, getAll, getById,updateSegunda, deleteSegunda, getFromUser, deleteTudo} from '../repositories/exer_segunda.repository.js'
 
 export const create = async(req,res)=>{
     try {

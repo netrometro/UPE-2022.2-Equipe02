@@ -1,4 +1,4 @@
-import {create,remove, deleteAll, getByUser} from '../controller/jantar.controller'
+import {create,remove, deleteAll, getByUser} from '../controller/jantar.controller.js'
 
 const rotas_jantar = app =>{
     //inserir informação
