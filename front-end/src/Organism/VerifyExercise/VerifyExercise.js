@@ -95,6 +95,20 @@ export function VerifyExercise(){
                             "Agachamento búlgaro - 300 a 450 calorias/hora"],
             "img":[""],
         },
+        "7":{
+            "tipo":["Posterior"],
+            "exercicios":[  "Levantamento terra - 400 a 600 calorias/hora",
+                            "Flexão de pernas em máquina - 200 a 400 calorias/hora",
+                            "Stiff - 350 a 500 calorias/hora",
+                            "Mesa flexora - 150 a 250 calorias/hora",
+                            "Panturrilha no leg press - 250 a 400 calorias/hora",
+                            "Glúteos no cabo - 200 a 300 calorias/hora",
+                            "Peso morto com pernas estendidas - 400 a 600 calorias/hora",
+                            "Swiss ball hamstring curl - 200 a 300 calorias/hora",
+                            "Afundo reverso - 300 a 450 calorias/hora",
+                            "Good morning - 250 a 400 calorias/hora"],
+            "img":[""],
+        },
     };
 
     const [exer, setExer] = useState("");
