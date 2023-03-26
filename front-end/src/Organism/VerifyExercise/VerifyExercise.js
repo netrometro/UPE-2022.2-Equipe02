@@ -25,6 +25,20 @@ export function VerifyExercise(){
                             "Flexão de braço com um braço - 250 a 350 calorias/hora"],
             "img":[""],
         },
+        "2":{
+            "tipo":["Ombro"],
+            "exercicios":[  "Levantamento frontal com halteres - 200 a 400 calorias/hora - ",
+                            "Desenvolvimento com halteres - 300 a 500 calorias/hora - ",
+                            "Elevação lateral com halteres - 150 a 250 calorias/hora - ",
+                            "Remada alta com barra - 250 a 400 calorias/hora - ",
+                            "Arnold press com halteres - 250 a 400 calorias/hora - ",
+                            "Elevação frontal com barra - 200 a 300 calorias/hora - ",
+                            "Elevação lateral com cabo - 200 a 300 calorias/hora - ",
+                            "Elevação de ombros com halteres - 150 a 250 calorias/hora - ",
+                            "Desenvolvimento com barra - 250 a 400 calorias/hora - ",
+                            "Remada alta com halteres - 200 a 350 calorias/hora - "],
+            "img":[""],
+        },
     };
 
     const [exer, setExer] = useState("");
