@@ -34,6 +34,10 @@ export function Home(){
                             <p className="text-[20px] text-[#8854d0]">Dieta</p>
                             <p className="py-[10px]">Há a possibilidade de criar sua dieta e ou requisitar uma de acordo com suas necessidade.</p>
                         </div>
+                        <div className="col-span-4 flex flex-col items-center w-[300px] h-[230px] p-[50px] shadow-xl hover:shadow-2xl rounded-[12px]">
+                            <p className="text-[20px] text-[#8854d0]">Imc</p>
+                            <p className="py-[10px]">De acordo com o seu imc é geraod um diagnótico sobre a sua atual situação.</p>
+                        </div>
                     </div>
                 </div>
             </div>
