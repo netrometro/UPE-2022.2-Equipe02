@@ -30,6 +30,10 @@ export function Home(){
                             <p className="text-[20px] text-[#8854d0]">Treino</p>
                             <p className="py-[10px]">Há a possibilidade de você criar o seu própio treino e também requisitar um de acordo com suas necessidades.</p>
                         </div>
+                        <div className="col-span-4 flex flex-col items-center w-[300px] h-[230px] p-[50px] shadow-xl hover:shadow-2xl rounded-[12px]">
+                            <p className="text-[20px] text-[#8854d0]">Dieta</p>
+                            <p className="py-[10px]">Há a possibilidade de criar sua dieta e ou requisitar uma de acordo com suas necessidade.</p>
+                        </div>
                     </div>
                 </div>
             </div>
