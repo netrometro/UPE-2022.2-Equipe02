@@ -30,6 +30,11 @@ export function Headers(){
                         </Link>
                     </li>
                     <li className="ml-[20px]">
+                        <Link to='/imc'>
+                            <p>IMC</p>
+                        </Link>
+                    </li>
+                    <li className="ml-[20px]">
                         <OutButton name="Logout" func={()=>{
                             // eslint-disable-next-line react-hooks/rules-of-hooks
                             
