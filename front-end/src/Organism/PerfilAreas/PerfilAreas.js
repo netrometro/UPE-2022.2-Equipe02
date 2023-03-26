@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import axios, { isCancel, AxiosError } from "axios";
 import response from "react";
 import Barchart from "./Grafict";
-
+const{userId} = require('../../getUser/getId')
 
 
 export function PerfilAreas(){
@@ -24,6 +24,59 @@ export function PerfilAreas(){
     const [perfil, setPerfil] = useState([]);
 
     const pesoData = perfil.map((peso)=>(peso.peso))
+
+    function deletePerfil(){
+        const token = JSON.parse(localStorage.getItem("powerup")).token; // obter token do localStorage
+        const config = {
+            headers: {
+              Authorization: `Bearer ${token}`
+            }
+          };
+        axios.delete(`http://localhost:3001/perfil/${userId}`, config)
+        .then(response => {
+            if(response.status === 200){
+                console.log("deletado")
+            }
+        }).catch((err) => {
+            console.log(err);
+        });
+        // eslint-disable-next-line no-restricted-globals
+        location.reload();
+    }
+
+    function updatePerfil(e){
+
+        e.preventDefault()
+
+        let perfilInfo = {
+            idade: idade,
+            peso: peso,
+            altura: altura,
+            genero: genero,
+            fatorAtividade: fator,
+            id_conta: userId,
+        }
+
+        
+        const token = JSON.parse(localStorage.getItem("powerup")).token; // obter token do localStorage
+        const config = {
+            headers: {
+              Authorization: `Bearer ${token}`
+            }
+          };
+
+        axios.put(`http://localhost:3001/perfil/atualizar/${userId}`, perfilInfo, config)
+        .then(response => {
+            if(response.status === 200){
+                console.log("atualizado")
+            }
+        }).catch((err) => {
+            console.log(err);
+        });
+        // eslint-disable-next-line no-restricted-globals
+        location.reload();
+    }
+
 
     function addPerfil(e){
 
@@ -52,6 +105,8 @@ export function PerfilAreas(){
                 }).catch((err) => {
                     console.log(err);
                 });
+        // eslint-disable-next-line no-restricted-globals
+        location.reload();
         
         
     }
@@ -64,6 +119,30 @@ export function PerfilAreas(){
         axios.get("http://localhost:3001/perfil", config)
           .then((response) => {
             setPerfil(response.data);
+
+            // eslint-disable-next-line eqeqeq
+            if(response.data == ""){
+                //desabilitar o botão de atualizar e deletar
+                var botaoAtualiza = document.getElementById("btn2")
+                botaoAtualiza.disabled = true
+                botaoAtualiza.style.backgroundColor = "#F5F5F5";
+                botaoAtualiza.style.borderColor = "#C4C4C4";
+                botaoAtualiza.style.color = "#C4C4C4";
+
+                var botaoDelete = document.getElementById("btn3")
+                botaoDelete.disabled = true
+                botaoDelete.style.backgroundColor = "#F5F5F5";
+                botaoDelete.style.borderColor = "#C4C4C4";
+                botaoDelete.style.color = "#C4C4C4";
+
+            }else{
+                var botaoCadastro =  document.getElementById("btn");
+                botaoCadastro.disabled = true;
+                botaoCadastro.style.backgroundColor = "#F5F5F5";
+                botaoCadastro.style.borderColor = "#C4C4C4";
+                botaoCadastro.style.color = "#C4C4C4";
+                
+            }
           })
           .catch((error) => {
             console.log(error);
@@ -123,11 +202,22 @@ export function PerfilAreas(){
                 </form>
             </div>
 
-            <div className="my-[20px]"> 
-                        <Link to="/graficoPerfil">    
-                            <Buttons  name="Verificar Perfil" id="" func={addPerfil}/>
-                        </Link>
-            </div>   
+            <div className="my-[20px]"  style={{display: 'flex', flexDirection: 'row'}} >
+                <div id="teste"  className="mr-4" >
+                    <Link to="/graficoPerfil">    
+                        <Buttons name="Cadastrar" id="btn" func={addPerfil} />
+                    </Link>
+                </div>
+                <div className="mr-4">
+                    <Link to="/graficoPerfil">    
+                        <Buttons name="Atualizar" id="btn2" func={updatePerfil}/>
+                    </Link>
+                </div>
+                <div  className="mr-4">    
+                        <Buttons name="Deletar" id="btn3" func={deletePerfil}/>
+                    
+                </div>
+            </div>  
 
         </div>
             

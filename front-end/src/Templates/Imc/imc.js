@@ -1,6 +1,6 @@
-import { Headers } from "../../Organism/Headers.js/Headers";
-import { Footers } from "../../Organism/Footers/Footers.js";
-import { ImcAreas } from "../../Organism/Imc/imc";
+import { Headers } from "../../Organism/Headers/Headers.js";
+import { Footers } from "../../Organism/Footer/Footer.js";
+import { ImcAreas } from "../../Organism/imc/imc.js";
 
 
 

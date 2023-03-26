@@ -1,6 +1,5 @@
 import axios, { isCancel, AxiosError } from "axios";
 import response from "react";
-import Table from "react-bootstrap/Table";
 import { useEffect, useState } from "react";
 const{userId} = require("../../getUser/getId")
 
