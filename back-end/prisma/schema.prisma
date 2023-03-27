@@ -15,7 +15,7 @@ model Conta{
   email String @unique
   senha String
   nome String
-  //perfil Perfil?
+  perfil Perfil?
   imc IMC?
   jantar Jantar[]
   cafe Cafe[]
@@ -47,8 +47,8 @@ model Perfil{
   altura String
   genero String
   fatorAtividade String
-  //id_conta Int @unique
-  //conta Conta @relation(fields: [id_conta], references: [id])
+  id_conta Int @unique
+  conta Conta @relation(fields: [id_conta], references: [id])
 }
 
 model Jantar{

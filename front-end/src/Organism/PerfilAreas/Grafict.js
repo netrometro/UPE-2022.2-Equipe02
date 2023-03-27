@@ -1,5 +1,6 @@
 import React, {useState, useEffect } from "react";
 import Chart from "react-apexcharts";
+const{userId} = require('../../getUser/getId')
 
 function Barchart(){
 
@@ -16,7 +17,7 @@ function Barchart(){
       const config = {
         headers: { Authorization: `Bearer ${token}` },
       };
-      const dataReq= await fetch("http://localhost:3001/perfil", config);
+      const dataReq= await fetch(`http://localhost:3001/perfil/${userId}`, config);
       const dataRes= await dataReq.json();
       console.log(dataRes);
 

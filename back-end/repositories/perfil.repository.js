@@ -26,10 +26,10 @@ export const getById = async(id) =>{
 }
 
 //atualizar tabela
-export const updatePerfil = async(id, data) => {
+export const updatePerfil = async(id_conta, data) => {
     const perfil =  await prisma.perfil.update({
         where:{
-            id
+            id_conta
         },
         data
     })
@@ -38,11 +38,19 @@ export const updatePerfil = async(id, data) => {
 
 //deletar da tabela
 
-export const deletePerfil = async(id) => {
+export const deletePerfil = async(id_conta) => {
     await prisma.perfil.delete({
         where:{
-            id
+            id_conta
         }
     })
     return
+}
+export const getFromUser = async(id_conta) =>{
+    const perfil = await prisma.perfil.findMany({
+        where:{
+            id_conta
+        }
+    })
+    return perfil
 }

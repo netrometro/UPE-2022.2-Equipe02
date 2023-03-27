@@ -1,4 +1,4 @@
-import{create_perfil, getAll, getById,updatePerfil, deletePerfil} from '../repositories/perfil.repository.js'
+import{create_perfil, getAll, getById,updatePerfil, deletePerfil, getFromUser} from '../repositories/perfil.repository.js'
 //
 
 export const create = async(req,res)=>{
@@ -32,7 +32,7 @@ export const getId = async(req,res) => {
 
 export const update = async(req, res) => {
     try {
-        const perfil = await updatePerfil(Number(req.params.id),req.body)
+        const perfil = await updatePerfil(Number(req.params.id_conta),req.body)
         res.status(200).send(perfil)
     } catch (error) {
         res.status(400).send(error)
@@ -41,10 +41,19 @@ export const update = async(req, res) => {
 
 export const remove = async(req, res) => {
     try {
-        await deletePerfil(Number(req.params.id))
+        await deletePerfil(Number(req.params.id_conta))
         res.status(200).send()
     } catch (error) {
         res.status(400).send(error)
     }
     
+}
+
+export const getByUser = async(req,res) =>{
+    try {
+        const perfil = await getFromUser(Number(req.params.id_conta))
+        res.status(200).send(perfil)
+    } catch (error) {
+        res.status(400).send(error)
+    }
 }
