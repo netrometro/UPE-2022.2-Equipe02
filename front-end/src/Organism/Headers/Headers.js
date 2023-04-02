@@ -7,7 +7,7 @@ export function Headers(){
     const navigate = useNavigate()
     return(
         <div className="col-span-12 bg-[#8854d0] h-20  flex justify-between w-full font-bold text-[#d1d8e0]">
-                <p className="mx-[80px] text-3xl  mt-[20px]">PowerUp</p>
+                <p className="mx-[80px] text-3xl  mt-[20px]"><Link to="/home">PowerUp</Link></p>
                 <ul className="mx-[80px] mt-[20px] flex flex-row ">
                     <li className="ml-[20px]">
                         <Link to='/perfil'>
