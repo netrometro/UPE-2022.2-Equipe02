@@ -1,13 +1,13 @@
-import { Footers } from "../../Organism/Footer/Footer";
+
 import { Headers } from "../../Organism/Headers/Headers";
-import { Suplementos } from "../../Organism/suplementacao/suplementacao";
+import { Suplementation } from "../../Organism/Suplementation/suplementation";
 
 export function Suplementacao(){
     return(
         <div>
             <Headers/>
-           <Suplementos/>
-            <Footers/>
+           <Suplementation/>
+           
         </div>
     )
 

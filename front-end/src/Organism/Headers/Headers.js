@@ -25,7 +25,7 @@ export function Headers(){
                         </Link>
                     </li>
                     <li className="ml-[20px]">
-                        <Link to='/'>
+                        <Link to='/suplementacao'>
                             <p>Suplementos</p>
                         </Link>
                     </li>

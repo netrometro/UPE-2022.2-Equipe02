@@ -37,7 +37,7 @@ export function Home(){
                         </div>
                         <div className="col-span-4 flex flex-col items-center w-[300px] h-[230px] p-[50px] shadow-xl hover:shadow-2xl rounded-[12px]">
                             <p className="text-[20px] text-[#8854d0]">Imc</p>
-                            <p className="py-[10px]">De acordo com o seu imc é geraod um diagnótico sobre a sua atual situação.</p>
+                            <p className="py-[10px]">De acordo com o seu imc é possível gera um diagnóstico sobre a sua atual situação.</p>
                         </div>
                     </div>
                 </div>
