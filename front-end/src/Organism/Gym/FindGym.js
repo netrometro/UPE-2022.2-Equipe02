@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Buttons } from "../../Atomic/Buttons/Buttons";
+import { Link } from "react-router-dom";
 
 export function FindGym(){
 
@@ -44,6 +45,14 @@ export function FindGym(){
         }
     }
 
+    const listAllGym = gymList[gymRes].name.map((name,index) => (
+        <div>
+            <Link to={gymList[gymRes].link[index]}>
+                {name}
+            </Link>
+        </div>
+    ));
+
     return(
         <div>
             <div>Cidade disponíveis</div>
@@ -55,7 +64,12 @@ export function FindGym(){
                 <option value="3">Recife</option>
             </select>
 
-            <Buttons name="Pesquisar"/>
+            <Buttons name="Pesquisar" func={selectGym}/>
+            <div>
+                <p>Clique sobre a academia para visualizar sua localidade</p>
+                {listAllGym}
+            </div>
+
         </div>
     )
 }
