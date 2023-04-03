@@ -30,11 +30,13 @@ export function FindGym(){
     const [gym, setGym] = useState("");
     const [gymRes, setGymRes] = useState("0");
 
+    const handleGymChange = (e) => setGym(e.target.value);
+
     return(
         <div>
             <div>Cidade disponíveis</div>
 
-            <select name="" id="">
+            <select name="" id="" onChange={handleGymChange}>
                 <option value="">Selecione uma cidade</option>
                 <option value="1">Garanhuns</option>
                 <option value="2">Caruaru</option>
