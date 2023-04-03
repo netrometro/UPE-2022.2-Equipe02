@@ -28,12 +28,12 @@ export function FindGym(){
                     ],
          },
          "3":{
-            "name":["","","","",""],
-            "link":[    "",
-                        "",
-                        "",
-                        "",
-                        ""],
+            "name":["BodyTech","Smart Fit","Grow Happy","Ciafit Family","Selfit"],
+            "link":[    "https://www.google.com.br/maps/place/Bodytech+-+Shopping+Recife/@-8.119697,-34.906218,17z/data=!3m1!4b1!4m6!3m5!1s0x7ab1fb2067b745b:0x1118a79dae520991!8m2!3d-8.1197023!4d-34.9017333!16s%2Fg%2F11bxc617_5",
+                        "https://www.google.com.br/maps/search/smart+fit+recife/@-8.031333,-34.9143363,15z/data=!3m1!4b",
+                        "https://www.google.com.br/maps/place/Grow+happy+Academia/@-8.0313597,-34.9077702,17z/data=!3m1!4b1!4m6!3m5!1s0x7ab185358a15555:0x9779c61bb877a7c4!8m2!3d-8.031365!4d-34.9055815!16s%2Fg%2F11d_9j5r5b",
+                        "https://www.google.com.br/maps/place/Ciafit+Family+Club/@-8.0433317,-34.8996292,17z/data=!3m1!4b1!4m6!3m5!1s0x7ab18f0827cf3a7:0x9734857b76417530!8m2!3d-8.043337!4d-34.8951445!16s%2Fg%2F12jf8b68h",
+                        "https://www.google.com.br/maps/search/selfit+recife/@-8.0627998,-35.039038,11z/data=!3m1!4b1"],
          },
     }
 
@@ -56,6 +56,7 @@ export function FindGym(){
 
     const listAllGym = gymList[gymRes].name.map((name,index) => (
         <div className="shadow-inner p-[20px] m-[10px] duration-500 hover:shadow-2xl " key={index}>
+            <p className="mx-[20px]">Clique para visualizar sua localidade</p>
             <Link to={gymList[gymRes].link[index]}>
                 {name}
             </Link>
@@ -83,7 +84,7 @@ export function FindGym(){
 
             </div>
             <div className=" w-[1300px] h-max p-[50px]  rounded-[12px] my-[30px]">
-                <p className="mx-[20px]">Clique para visualizar sua localidade</p>
+                
                 {listAllGym}
             </div>
 
