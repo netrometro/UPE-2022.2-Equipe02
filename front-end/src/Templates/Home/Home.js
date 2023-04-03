@@ -3,6 +3,7 @@ import { Buttons } from '../../Atomic/Buttons/Buttons.js';
 import { Headers } from "../../Organism/Headers/Headers.js";
 import { Footers } from "../../Organism/Footer/Footer.js";
 import { VerifyExercise } from "../../Organism/VerifyExercise/VerifyExercise.js";
+import { FindGym } from "../../Organism/Gym/FindGym.js";
 
 
 
@@ -42,6 +43,7 @@ export function Home(){
                     </div>
                 </div>
             </div>
+            <FindGym/>
             <VerifyExercise/>
             <Footers/>
            
