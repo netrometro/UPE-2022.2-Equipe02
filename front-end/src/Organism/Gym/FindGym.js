@@ -86,6 +86,7 @@ export function FindGym(){
             <div className=" max-w-max h-max p-[50px]  rounded-[12px] my-[30px]">
             <p className="mx-[20px]">Clique para visualizar sua localidade</p>
                 {listAllGym}
+                <p className="mx-[40px] text-[12px]">Mais cidade disponíveis em breve...</p>
             </div>
 
         </div>

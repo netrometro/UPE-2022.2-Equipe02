@@ -41,6 +41,20 @@ export function Home(){
                             <p className="py-[10px]">De acordo com o seu imc é possível gera um diagnóstico sobre a sua atual situação.</p>
                         </div>
                     </div>
+                    <div className="grid grid-cols-12 gap-10 my-[30px] ">
+                        <div className="col-span-4 flex flex-col items-center w-[300px] h-[230px] p-[50px] shadow-xl hover:shadow-2xl rounded-[12px]">
+                            <p className="text-[20px] text-[#8854d0]">Suplementos</p>
+                            <p className="py-[10px]">Possivel ver quais os suplementos ideais para a sua necessidade</p>
+                        </div>
+                        <div className="col-span-4 flex flex-col items-center w-[300px] h-[230px] p-[50px] shadow-xl hover:shadow-2xl rounded-[12px]">
+                            <p className="text-[20px] text-[#8854d0]">Localidade</p>
+                            <p className="py-[10px]">Veja quais as melhores academias da sua cidade com a localização disponível</p>
+                        </div>
+                        <div className="col-span-4 flex flex-col items-center w-[300px] h-[230px] p-[50px] shadow-xl hover:shadow-2xl rounded-[12px]">
+                            <p className="text-[20px] text-[#8854d0]">Exercicios</p>
+                            <p className="py-[10px]">Veja uma biblioteca com os mais variados treinos para cada parte do corpo</p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <FindGym/>
