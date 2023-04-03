@@ -56,7 +56,7 @@ export function FindGym(){
 
     const listAllGym = gymList[gymRes].name.map((name,index) => (
         <div className="shadow-inner p-[20px] m-[10px] duration-500 hover:shadow-2xl " key={index}>
-            <p className="mx-[20px]">Clique para visualizar sua localidade</p>
+            
             <Link to={gymList[gymRes].link[index]}>
                 {name}
             </Link>
@@ -83,8 +83,8 @@ export function FindGym(){
            
 
             </div>
-            <div className=" w-[1300px] h-max p-[50px]  rounded-[12px] my-[30px]">
-                
+            <div className=" max-w-max h-max p-[50px]  rounded-[12px] my-[30px]">
+            <p className="mx-[20px]">Clique para visualizar sua localidade</p>
                 {listAllGym}
             </div>
 
