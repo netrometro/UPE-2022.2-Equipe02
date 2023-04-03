@@ -32,6 +32,12 @@ export function FindGym(){
 
     const handleGymChange = (e) => setGym(e.target.value);
 
+    function selectGym(){
+        if(gym === "1"){
+            setGymRes("1")
+        }
+    }
+
     return(
         <div>
             <div>Cidade disponíveis</div>
