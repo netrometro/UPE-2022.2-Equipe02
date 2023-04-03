@@ -19,12 +19,21 @@ export function FindGym(){
         ],
          },
          "2":{
-            "name":[""],
-            "link":[""],
+            "name":["Cross Experience","Musculo em boa forma","Alto Fitness","Happy Fit","Selfit"],
+            "link":[    "https://www.google.com.br/maps/place/Cross+Experience:+Academia,+Treinos,+Suplementa%C3%A7%C3%A3o,+Caruaru+PE/@-8.2958166,-35.9808942,17z/data=!3m1!4b1!4m6!3m5!1s0x7a98b5400b7ce59:0x19e47537a6f99de3!8m2!3d-8.2958219!4d-35.9787055!16s%2Fg%2F11nn2051vb",
+                        "https://www.google.com.br/maps/place/M%C3%BAsculo+em+Boa+Forma+Academia/@-8.2915848,-35.98179,17z/data=!3m1!4b1!4m6!3m5!1s0x7a98ba202a90015:0x6d4f8ea6128f935e!8m2!3d-8.2915901!4d-35.9796013!16s%2Fg%2F11b6_skcfv",
+                        "https://www.google.com.br/maps/place/Academia+Alto+Fitness/@-8.294669,-35.9828671,17z/data=!3m1!4b1!4m6!3m5!1s0x7a98b9f84527be7:0xdd7baeafa2d57fb4!8m2!3d-8.2946743!4d-35.9806784!16s%2Fg%2F11c40qz4kp",
+                        "https://www.google.com.br/maps/place/ACADEMIA+HAPPY+FIT+CARUARU/@-8.2829135,-35.9757014,17z/data=!3m1!4b1!4m6!3m5!1s0x7a98b6c632b4ae5:0x6bcf934e8034df97!8m2!3d-8.2829188!4d-35.9735127!16s%2Fg%2F11sdz7s53j",
+                        "https://www.google.com.br/maps/place/Selfit/@-8.2806859,-35.9732313,17z/data=!3m1!4b1!4m6!3m5!1s0x7a98bb845970203:0x3d0c5da702855ead!8m2!3d-8.2806912!4d-35.9710426!16s%2Fg%2F11b_3h44w9"
+                    ],
          },
          "3":{
-            "name":[""],
-            "link":[""],
+            "name":["","","","",""],
+            "link":[    "",
+                        "",
+                        "",
+                        "",
+                        ""],
          },
     }
 
@@ -46,7 +55,7 @@ export function FindGym(){
     }
 
     const listAllGym = gymList[gymRes].name.map((name,index) => (
-        <div>
+        <div className="shadow-inner p-[20px] m-[10px] duration-500 hover:shadow-2xl " key={index}>
             <Link to={gymList[gymRes].link[index]}>
                 {name}
             </Link>
@@ -61,7 +70,7 @@ export function FindGym(){
 
             <div className=" w-max h-max p-[50px] shadow-2xl rounded-[12px] my-[30px] " >
 
-            <select name="" id="" onChange={handleGymChange}>
+            <select name="" id="" onChange={handleGymChange} className="mx-[10px]">
                 <option value="">Selecione uma cidade</option>
                 <option value="1">Garanhuns</option>
                 <option value="2">Caruaru</option>
@@ -70,9 +79,11 @@ export function FindGym(){
 
             <Buttons name="Pesquisar" func={selectGym}/>
 
+           
+
             </div>
-            <div>
-                <p>Clique sobre a academia para visualizar sua localidade</p>
+            <div className=" w-[1300px] h-max p-[50px]  rounded-[12px] my-[30px]">
+                <p className="mx-[20px]">Clique para visualizar sua localidade</p>
                 {listAllGym}
             </div>
 
