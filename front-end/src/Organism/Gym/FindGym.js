@@ -54,8 +54,12 @@ export function FindGym(){
     ));
 
     return(
-        <div>
-            <div>Cidade disponíveis</div>
+        <div className="flex flex-col items-center justify-center pt-[20px]">
+            <div>
+                <p className="text-2xl font-bold text-[#8854d0]">Cidade disponíveis</p>
+            </div>
+
+            <div className=" w-max h-max p-[50px] shadow-2xl rounded-[12px] my-[30px] " >
 
             <select name="" id="" onChange={handleGymChange}>
                 <option value="">Selecione uma cidade</option>
@@ -65,6 +69,8 @@ export function FindGym(){
             </select>
 
             <Buttons name="Pesquisar" func={selectGym}/>
+
+            </div>
             <div>
                 <p>Clique sobre a academia para visualizar sua localidade</p>
                 {listAllGym}
