@@ -1,8 +1,9 @@
+import { useState } from "react";
 import { Buttons } from "../../Atomic/Buttons/Buttons";
 
 export function FindGym(){
 
-    const gym = {
+    const gymList = {
         "0":{
            "name":[""],
            "link":[""],
@@ -25,6 +26,9 @@ export function FindGym(){
             "link":[""],
          },
     }
+
+    const [gym, setGym] = useState("");
+    const [gymRes, setGymRes] = useState("0");
 
     return(
         <div>
