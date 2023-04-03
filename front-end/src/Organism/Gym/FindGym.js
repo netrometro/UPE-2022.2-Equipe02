@@ -35,6 +35,12 @@ export function FindGym(){
     function selectGym(){
         if(gym === "1"){
             setGymRes("1")
+        }else if(gym === "2"){
+            setGymRes("2")
+        }else if(gym === "3"){
+            setGymRes("3")
+        }else{
+            alert("selecione uma cidade para ver o resultado")
         }
     }
 
