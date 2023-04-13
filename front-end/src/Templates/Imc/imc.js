@@ -6,7 +6,7 @@ import { ImcAreas } from "../../Organism/imc/imc.js";
 
 export function Imc(){
     return(
-        <div className="grid grid-cols-12">
+        <div>
             <Headers/>
             <ImcAreas title="PowerUp" subTitle="IMC" but="Login"/>
             <Footers/>
